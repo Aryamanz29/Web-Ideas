@@ -1,6 +1,41 @@
 * {
   box-sizing: border-box;
+  font-family: verdana;
 }
+:root{
+  --main-color:rgb(23, 114, 199);
+}
+body {
+  background: url(images/bg.jpg) no-repeat;
+  caret-color: var(--main-color);
+  transition: all 3s;
+}
+
+::placeholder{
+  color: rgb(55, 109, 207);
+  font-family: arial, helvet;
+  font-weight:600;
+  opacity: 50%;
+}
+
+input:focus{
+  background: rgba(51, 67, 97, 0.5);
+  color: white;
+}
+
+input:focus::placeholder{
+  color: white;
+  opacity: 0%;
+}
+
+.container{
+  width: 80%;
+  margin: 2% auto;
+  opacity: 75%;
+  border: 3px solid var(--main-color);
+  filter: drop-shadow(8px 8px 4px rgb(55, 109, 207));
+}
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -11,15 +46,17 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: var(--main-color);
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 input[type=submit]:hover {
   background-color: #45a049;
+  transition: all 0.1s linear;
 }
 
 .container {
