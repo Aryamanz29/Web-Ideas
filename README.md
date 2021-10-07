@@ -1,14 +1,11 @@
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-#   <h1 align="center">🚀 Web-Dev-Ideas X Hacktoberfest 2021 🚀</h1>    
+#   <h1 align="center">🚀 Web-Ideas🚀</h1>    
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <img align="center" src="https://user-images.githubusercontent.com/56113566/136353444-47601e4b-115c-4190-8ac6-79d4137f9629.jpg" height="300px" width="800">
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<img src="https://user-images.githubusercontent.com/56113566/135768991-0dfc4c0d-6d7e-4180-9afd-02df65651c42.png" height="300px" width="1000">
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -18,18 +15,10 @@
 
 - This repository has collection of `Web-Dev related` projects. </p>
 - Consider leaving a ⭐ here.
-- Check out more `beginner-friendly` web-related projects here.
-- Follow [@Aryamanz29](https://github.com/Aryamanz29) for more updates.
+- Check out more `beginner-friendly` web-related projects & issues here.
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-## Contributors must follow below steps ⬇ 
 
-- Create an`issue`, **"I would like to add my `XYZ` web project"**
-- Get assigned by `maintainer`
-- Project must have `READMD.md` and `Working Screenshots/GIF's/Video`
-- Project must be submitted inside `Web-Dev-Ideas/` directory.
-- Create a **PR(With proper PR description, Fixes #issue_number)**
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
