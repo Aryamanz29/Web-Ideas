@@ -1,6 +1,6 @@
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-# 🚀 Web-Dev-Ideas X Hacktoberfest 2021 🚀
+#   <h1 align="center">🚀 Web-Dev-Ideas X Hacktoberfest 2021 🚀</h1>    
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
