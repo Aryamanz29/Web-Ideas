@@ -6,9 +6,11 @@
   --main-color:rgb(23, 114, 199);
 }
 body {
-  background: url(images/bg.jpg) no-repeat;
+  background: url(images/bg.jpg) center no-repeat;
   caret-color: var(--main-color);
   transition: all 3s;
+  margin: 0;
+  padding: 0;
 }
 
 ::placeholder{
@@ -36,7 +38,7 @@ input:focus::placeholder{
   filter: drop-shadow(8px 8px 4px rgb(55, 109, 207));
 }
 
-input[type=text], select, textarea {
+input[type=text],[type=email], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -52,6 +54,7 @@ input[type=submit] {
   border: none;
   cursor: pointer;
   border-radius: 10px;
+  transition: all 0.1s linear;
 }
 
 input[type=submit]:hover {

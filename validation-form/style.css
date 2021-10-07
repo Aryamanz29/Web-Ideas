@@ -15,6 +15,7 @@ body{
     justify-content:center;
     min-height:100vh;
     margin:0;
+    padding:0;
 }
 .container{
 
@@ -82,5 +83,10 @@ border-color:var(--error-color);
     padding: 10px;
     margin-top:20px;
     width:100%;
+    transition: background-color 0.3s ease-out;
+}
 
+.form button:hover{
+    background-color: rgb(40, 104, 207);
+    transition: background-color 0.3s ease-out;
 }

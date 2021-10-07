@@ -56,10 +56,11 @@ h2{
 	border-radius: 30px;
 	outline: none;
 	cursor: pointer;
+	transition: box-shadow 0.3s ease-in-out;
 }
 #btn:hover{
 	box-shadow: 1px 1px 10px  #341f97; 
-
+    transition: box-shadow 0.3s ease-in-out;
 }
 #info{
 	font-size: 12px;
