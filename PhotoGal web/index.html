@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Hacktober Fest Image Gallery</title>
+</head>
+<body>
+    <div class="container">
+        <img class="img" src="img/logo-hacktoberfest-full.f42e3b1.svg" alt=""   >
+
+    </div>
+    <div class = "container-div">
+        <h1 style="text-align: center; padding-top: 50px "  >Happy Coding!!!!</h3>
+
+    </div>
+
+
+    <div class="full-img" id = "fullimgbox">
+        <img src="img/img1.jpg" id = "fullimg">
+        <span onclick="closeFullImg()" >Close</span>
+
+
+    </div>
+    <div class="img-gallery">
+        <img src="img/img1.jpg" onclick="openFullImg(this.src)"  >
+        <img src="img/img2.jpg" onclick="openFullImg(this.src)" >
+        <img src="img/img3.jpg" onclick="openFullImg(this.src)">
+        <img src="img/img4.jpg" onclick="openFullImg(this.src)">
+        <img src="img/img5.jpg" onclick="openFullImg(this.src)">
+        <img src="img/img6.jpg" onclick="openFullImg(this.src)">
+        <img src="img/img7.jpg" onclick="openFullImg(this.src)">
+        <img src="img/img8.jpg" onclick="openFullImg(this.src)">
+
+
+    </div>
+    
+<script>
+    var fullimgbox = document.getElementById("fullimgbox");
+    var fullimg = document.getElementById("fullimg");
+
+    function openFullImg(pic){
+        fullimgbox.style.display = "flex" ;
+        fullimg.src = pic ;
+
+    }
+    function closeFullImg(){
+        fullimgbox.style.display = "none";
+    }
+
+
+
+
+</script>
+</body>
+</html>
