@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h2>Image Modal</h2>
+        <p>Click on the image to view it in a modal.</p>
+
+        <img id="myImg" src="Lake.jpg" alt="Lake" style="width:100%;max-width:300px">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img1">
+          <div id="caption"></div>
+        </div>
+
+        <script>
+        var modal=document.getElementById("myModal");
+        var img=document.getElementById("myImg");
+        var modalImg = document.getElementById("img1");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        </script>
+
+    </body>
+</html>
