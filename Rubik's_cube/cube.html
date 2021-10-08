@@ -6,7 +6,7 @@
   <title>The Cube</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width,user-scalable=no">
-  <link rel="stylesheet" href="./css/cube.css" />
+  <link rel="stylesheet" href="css/cube.css" />
   
 
 </head>
@@ -24,7 +24,7 @@
             <span>CUBE</span>
             </h1>
             <div class="text text--note">
-                Solve the Cube within <span style="color: red;">13 minutes </span><br><br> to earn a NFT <br><br>Double tap to start
+               Double tap to start
             </div>
             <div class="text text--timer">
             0:00
@@ -95,26 +95,11 @@
         </div>
 
         </div>
-        <script>
-        if(!localStorage.getItem('mykey'))
-        {
-            alert("you have either pressed refresh button or back button and hence lost your key !! SorrY :(");
-            window.location.href="index.html";
-        }
-    </script>
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/95/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="./js/cube.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded',()=>{
-
-            setTimeout(function()
-            { 
-                localStorage.removeItem('mykey');
-
-            }, 120000);//2min
-        })
-    </script>
+    <script src="js/cube.js"></script>
+  
 </body>
 </html>
 
