@@ -1,6 +1,6 @@
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-#   <h1 align="center">🚀 Web-Ideas🚀</h1>    
+#   <h1 align="center">🚀 Web-Ideas 🚀</h1>    
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -11,8 +11,6 @@
 
  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome" /> <a href="https://github.com/Aryamanz29/Web-Dev-Ideas/pulls" target="_blank"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Aryamanz29/Web-Dev-Ideas?style=for-the-badge" /></a> <a href="https://github.com/Aryamanz29/Web-Dev-Ideas/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Aryamanz29/Web-Dev-Ideas?style=for-the-badge" /></a> 
 <div align="center">
- 
- ![134015433-aec59d97-a8d7-407a-88fd-5e3edebc2b77](https://user-images.githubusercontent.com/69195262/136525643-085cb1c3-fa08-4da7-bc04-64c77f6e49e7.png)
  
  </div>
 
