@@ -1,0 +1,38 @@
+
+body {
+	background-color: #2f4858;
+}
+
+.square {
+	width: 30%;
+	background-color: #2f4858;
+	padding-bottom:  30%;
+	float: left;
+	margin: 1.66%;
+}
+
+#container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+h1 {
+	color: white;
+	text-align:  center;
+	margin-bottom: 30px;
+}
+button{
+	padding: 5px;
+	margin: 10px;
+}
+#stripe {
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	padding: 0.8rem;
+	background-color: #ffb703;
+	height: 30px;
+	text-align: center;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
