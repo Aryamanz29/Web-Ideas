@@ -1,0 +1,58 @@
+.welcome-screen {
+  background-color: #132E4D;
+  color: white;
+  height: 102vh;
+}
+.container-fluid {
+  font-family: 'Itim', cursive;
+}
+ .welcome-screen-header {
+   margin-bottom: 2%;
+   background-color: #312c51;
+   padding: 1% 1%;
+ }
+ .welcome-screen-title {
+   display: flex;
+   justify-content: center;
+   font-size: 35px;
+ }
+
+.dice-image {
+  color: #132E4D;
+  width: 65%;
+  border-radius: 2%;
+}
+.welcome-screen-bottom {
+  position: relative;
+  top: 4%;
+}
+.welcome-img-section {
+  display: flex;
+  justify-content: center;
+}
+.welcome-screen-button-section {
+  display: flex;
+  justify-content: center;
+}
+.start-button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #511281;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #21094e;
+}
+
+.start-button:hover {
+  background-color: #3f3697;
+}
+
+@media only screen and (max-width: 1024px){
+  .welcome-screen-middle {
+    padding-top: 18%;;
+  }
+}

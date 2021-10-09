@@ -1,0 +1,69 @@
+.rules-screen {
+    background-color: #132E4D;
+    height: 100vh;
+    overflow: hidden;
+}
+.rules-screen-header{
+    padding: 1% 1%;
+    font-size: 20px;
+    margin-bottom: 2%;
+    background-color: #312c51;
+    color: white;
+}
+.back-to-add-players {
+    font-size: 13px;
+}
+.greet-players {
+display: flex;
+justify-content: center;
+}
+.player-names {
+    color: #fff600;
+}
+.rules-screen-middle-bottom {
+    color: white;
+}
+.rules-list-title {
+  display: flex;
+  justify-content: center;
+font-size: 30px;
+color: white;
+}
+.rules-list {
+    margin: 3% 4%;
+    font-size: 15px;
+}
+.rules-list > p {
+    font-size: 18px;
+    margin: 2% 2%;
+}
+.set-score-section {
+    height: 6em;
+} 
+.set-score {
+   display: flex;
+   justify-content: center;
+}
+.input-winning-score {
+    font-size: 18px;
+}
+
+.set-score-warning {
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+.start-play-button-section{
+    display: flex;
+    justify-content: center;
+}
+.start-playing {
+    color:#4081EC;
+}
+@media only screen and (max-width:992px) {
+    .start-playing {
+margin-top: 10px;
+    }
+
+}
