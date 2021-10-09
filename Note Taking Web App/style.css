@@ -1,0 +1,24 @@
+*{
+    user-select: none;
+}
+
+.note{
+    user-select: auto;
+}
+body{
+    background: url(bg.jpg) fixed;
+}
+.container{
+    margin-top: 100px;
+}
+
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 1;
+}
+.container h1 {
+    color: white;
+}

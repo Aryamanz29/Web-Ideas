@@ -12,14 +12,12 @@
   </div>
   <div class="row">
       <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="phone">Phone</label>
-        <input type="number" id="phone" name="phone" placeholder="Enter Your Phone Number">
-        <label for="email ">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email"style="width:100%">
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" required name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name *</label>
+        <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
+        <label for="email ">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"style="width:100%">
         <label for="How can we help you?">How can we help you?</label>
         <textarea id="How can we help you?" name="How can we help you?" placeholder="Write your msg" style="height:170px"></textarea>
         <input type="submit" value="Submit">

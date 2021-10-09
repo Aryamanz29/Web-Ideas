@@ -38,7 +38,7 @@ input:focus::placeholder{
   filter: drop-shadow(8px 8px 4px rgb(55, 109, 207));
 }
 
-input[type=text],[type=email], select, textarea {
+input[type=text],[type=email],[type=number], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
