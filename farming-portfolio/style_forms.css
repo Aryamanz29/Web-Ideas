@@ -1,0 +1,15 @@
+#navbar{
+    background-color:#8cba51;
+}
+#content{
+    text-align: center;
+}
+.big-head{
+    padding: 50px 30px;
+    font-size: 4rem;
+    font-family: 'Montserrat';
+}
+.form-btn{
+    margin: 40px;
+    padding: 15px 10px;
+}
