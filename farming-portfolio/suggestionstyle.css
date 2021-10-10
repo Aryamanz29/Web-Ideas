@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    background-image: url(images/crop.jpg);
+}
+.big-head{
+    color: #8cba51;
+    font-size: 4rem;
+    padding: 50px;
+}
+.big-btn{
+    padding: 10px 40px;
+    margin: 50px 20px;
+}
+.small-btn{
+    padding: 10px 38px;
+    margin: 30px;
+}
