@@ -1,0 +1,31 @@
+.top-empty-row {
+    height: 10vh;
+}
+.section-title, .section-input, .section-list {
+    display: flex;
+    justify-content: center;
+}
+.add-btn {
+    background: none;
+    border: none;
+}
+.add-icon {
+    vertical-align: middle;
+}
+.list-top-empty-row {
+    height: 10em;
+}
+.list {
+  margin-top: 5%;
+  list-style-type: none;
+}
+.listItem {
+    margin-top: 5%;
+}
+.del-btn{
+background: none;
+border: none;
+}
+.del-icon {
+    vertical-align: middle;
+}

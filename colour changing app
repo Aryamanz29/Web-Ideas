@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style.css">
+    <title> Colour Changing App</title>
+</head>
+<style>
+    #canvas{
+    background-color: red;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    width: 900px;
+    height: 900px;
+    margin: 50px auto 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin: 50px auto 50px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: black;
+    border-radius: 5px;
+    border-style: none;
+    display: block;
+}
+
+</style>
+<body>
+    <div id="canvas">
+        My background color will change when my button below is clicked.
+    </div>
+    <button id="button"> Click me!</button>
+</body>
+<script> 
+//Select 11 colors
+let colors = [ 'red', 'rgb(120,90,175)', 'green', 'peach', 'purple', 'rgb(69, 47, 94)', 'yellow','pink','maroon','indigo','grey'];
+
+
+
+//change the background of canvas when button is clicked
+let button = document.getElementById('button');
+
+button.addEventListener('click', function(){
+    //select a random number between 0 - 10
+    let index = parseInt((Math.random()*colors.length)+1);
+    //grab the canvas
+    let canvas = document.getElementById('canvas');
+
+    canvas.style.background = `${colors[index]}`
+})
+</script>
+</html>
