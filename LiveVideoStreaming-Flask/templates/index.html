@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <title>To DO List</title>
+</head>
+<body>
+    
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+    <span class="navbar-brand ">LIVE STREAMING</span>
+  </nav>
+
+  <div class="container mt-5" style="width: 1000px; ">
+      <div class="d-flex justify-content-center ">
+      <!-- </div>
+      
+        <div class="d-flex justify-content-center mt-3"> -->
+            <input id="text-input" style="width: 500px;" type="text" >
+                <button id="add-btn" style="width: 300px;" class="form-control">ADD STREAM</button>
+        </div>
+        
+       
+			<div id=streams class="d-flex justify-content-center mt-3 row">
+				<!-- <div class="col-6 mt-3">
+					<img src="{{ url_for('liveVideo') }}" width="100%" style="border-radius: 20px;" />
+					<button id="add-btn" style="background-color: black; color: white;" class="form-control">DELETE STREAM</button>
+				</div> -->
+				
+			</div>
+  </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+let inputfield = document.querySelector("#text-input");
+let addbutton = document.querySelector("#add-btn");
+let strm = document.querySelector("#streams");
+addbutton.addEventListener('click', finalcode)
+inputfield.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      finalcode();
+    }
+});
+
+function finalcode(){
+
+    if(inputfield.value!=0){
+        alert("Kindly enter correct RTSP or 0 for webcam");
+        return;
+    }
+
+    strm.innerHTML += `
+    <div class="col-6 mt-3">
+					<img src="{{ url_for('liveVideo') }}" width="100%" style="border-radius: 20px;" />
+					<button id="del" style="background-color: black; color: white;" class="form-control">DELETE STREAM</button>
+	</div>
+    `
+    inputfield.value="";
+
+    
+    let strmitems = document.querySelectorAll("#del");
+    strmitems.forEach(deletefun);
+    function deletefun(item){
+        item.addEventListener('click', function(){
+            this.parentNode.remove();
+        })
+    }
+
+    let listitems = document.querySelectorAll("#lst");
+    listitems.forEach(crossfun);
+    function crossfun(item){
+        item.addEventListener('click', function(){
+            this.classList.add('cross');
+        })
+    }
+}
+
+
+</script>
+
+
+</html>
