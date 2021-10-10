@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap');
+
+:root{
+    --primary-bg-color:#eee;
+    --secondary-bg-color:#fff;
+
+    --primary-text-color:#666;
+    --secondary-text-color:#999;
+}
+
+body.active{
+    --primary-bg-color:#222;
+    --secondary-bg-color:#333;
+
+    --primary-text-color:#fff;
+    --secondary-text-color:#eee;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Azeret Mono',sans-serif;
+    transition: all 0.5s linear;
+}
+
+body{
+    background-color: var(--primary-bg-color);
+}
+
+.container{
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .content{
+    width: 400px;
+    background: var(--secondary-bg-color);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0.5px 10px rgba(0,0,0,0.1);
+}
+
+.container .content p{
+    line-height: 2;
+    color: var(--primary-text-color);
+}
+
+#themetoggler{
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    padding: 15px 20px;
+    font-size: 30px;
+    background: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
