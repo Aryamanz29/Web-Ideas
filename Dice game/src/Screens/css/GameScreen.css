@@ -1,0 +1,67 @@
+
+.game-screen {
+    background-color: #132E4D;
+    color: white;
+}
+#displayMessage {
+    font-size: 30px;
+    color: #fff600;
+   display: flex;
+   justify-content: center;
+}
+.back-to-rules-button {
+    color:#4081EC;
+}
+.game-screen-header {
+    margin-bottom: 3%;
+   background-color:  #312c51;
+   padding: 1% 1%;
+}
+.game-play-section {
+    font-size: 18px;
+}
+.dice > div > button > img {
+    border-radius: 12%;
+    width: 76%;
+}
+.dice > div > button {
+    background: none;   
+    border: none;
+    padding: 5%;
+}
+.winning-score {
+    padding-left: 2.5%;
+}
+.player-name-for-dice {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.player-1, .player-2 {
+    margin-top: 5%;
+}
+.hold-button, .reset-button {
+    color:#4081EC;
+}
+.reset-button  {
+    margin: 3% 0% 0% 10%;
+}
+.nested-row-right-scores {
+    height: 7em;
+}
+
+.rotate:active {
+    transform: rotate(720deg);
+    transition: .5s;
+}
+
+@media only screen and (min-width: 992px) {
+    .game-screen {
+      height: 101vh;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .dice > div > button > img {
+        width: 50%;
+    }
+  }
