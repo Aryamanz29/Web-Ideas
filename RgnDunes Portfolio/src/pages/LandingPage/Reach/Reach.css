@@ -1,0 +1,59 @@
+.reach {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+}
+
+.reach > h2 {
+  display: grid;
+  place-items: center;
+  color: var(--primary);
+  font-size: calc(20px + 2vw);
+  font-weight: 900;
+  -webkit-text-stroke: 1px var(--indigo);
+  font-family: "Source Code Pro", monospace;
+}
+
+.reach__content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  padding: 20px;
+  border-radius: 13px;
+}
+
+.reach__content::before {
+  -webkit-filter: url("#blur");
+  filter: url("#blur");
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  background-size: cover;
+  opacity: 0.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  border-radius: 999px;
+}
+
+button > img {
+  object-fit: contain;
+  width: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+button > img:hover {
+  /* padding: 10px; */
+  /* margin-bottom: 5px; */
+  text-align: center;
+  /* box-shadow: 10px 10px 10px 3px rgb(21 21 21 / 20%);
+  background-color: #dee2ff; */
+  /* border-radius: 999px; */
+  transform: scale(1.1);
+}

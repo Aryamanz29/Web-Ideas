@@ -1,0 +1,19 @@
+.soloProjects {
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.soloProjects > h2 {
+  color: var(--primary);
+  font-size: calc(20px + 5vw);
+  font-weight: 900;
+  -webkit-text-stroke: 1px var(--indigo);
+}
+
+.soloProjects__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

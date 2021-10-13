@@ -1,0 +1,33 @@
+.navbar {
+  display: grid;
+  place-items: center;
+  padding: 0 7px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #fff;
+  width: 100vw;
+
+  backdrop-filter: blur(10px);
+}
+
+.navbar__logo > a > img {
+  padding-top: 10px;
+  object-fit: contain;
+  max-width: 50px;
+  width: 15vw;
+}
+
+.navbar__navItems {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.navbar__navItems > a {
+  transition: all 100ms linear;
+}
+
+.navbar__navItems > a:hover {
+  transform: scale(1.2);
+}
