@@ -1,0 +1,127 @@
+.card {
+  width: 350px;
+  padding: 40px;
+  background: white;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card:before {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card > .card__icon {
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 3s;
+}
+
+.card:nth-of-type(even) > .card__icon {
+  box-shadow: 0 0 0 0 #0082e6;
+  background: #0082e6;
+}
+
+.card:nth-of-type(even):hover > .card__icon {
+  box-shadow: 0 0 0 800px #0082e6;
+}
+
+.card:nth-of-type(odd) > .card__icon {
+  box-shadow: 0 0 0 0 #2c3e50;
+  background: #2c3e50;
+}
+
+.card:nth-of-type(odd):hover > .card__icon {
+  box-shadow: 0 0 0 800px #2c3e50;
+}
+
+.card .card__contentbox {
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  padding: 5px;
+  padding-bottom: 20px;
+  border-radius: 11px;
+  background-color: var(--light);
+}
+
+.card:nth-of-type(odd):hover .card__contentbox {
+  color: #2c3e50;
+}
+
+.card:nth-of-type(even):hover .card__contentbox {
+  color: #0082e6;
+}
+
+.card .card__contentbox h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 0;
+}
+.card .card__contentbox p {
+  margin: 0;
+  padding: 0px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+}
+
+.btn {
+  border: 1px solid #3498db;
+  color: #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.6s;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  box-shadow: 10px 10px 10px 3px rgb(21 21 21 / 20%);
+}
+
+.card:nth-of-type(even):hover > a > .btn {
+  color: #2c3e50;
+  border: 1px solid #2c3e50;
+}
+
+.card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card__skill {
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 10px 3px rgb(21 21 21 / 20%);
+  background-color: #dee2ff;
+  border-radius: 999px;
+}

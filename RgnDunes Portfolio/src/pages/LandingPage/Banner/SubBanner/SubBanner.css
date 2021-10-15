@@ -1,0 +1,96 @@
+.subbanner {
+  height: 84.5vh;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 0px;
+  background-color: transparent;
+  position: relative;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  background-color: pink;
+  width: 40%;
+  border-radius: 999px;
+  padding-bottom: 140%;
+  transform: rotate(70deg);
+  z-index: -1;
+}
+
+.subbanner__photo {
+  background-color: transparent;
+}
+
+.subbanner__photo > img {
+  border: 3px solid #fff;
+  border-radius: 999px;
+  width: calc(170px + 5vw);
+  vertical-align: middle;
+  box-sizing: border-box;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.subbanner__caption {
+  align-items: justify;
+  background-color: transparent;
+}
+
+.subbanner__context {
+  padding: 20px;
+}
+
+.subbanner__context > * {
+  vertical-align: middle;
+}
+
+.subbanner__captionSmall {
+  color: var(--dark);
+  font-weight: 790;
+  font-size: calc(17px + 1.8vw);
+  background-color: transparent !important;
+}
+
+.subbanner__captionLarge {
+  font-size: 8vw;
+  font-weight: 900;
+  background-image: url("../../../../assets/images/logo/vscode.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Source Code Pro", monospace;
+}
+
+.subbanner__captionLargeSpan {
+  background-image: url("../../../../assets/images/logo/vscode.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subbanner__captionMinor {
+  color: var(--gray);
+}
+
+.subbanner__captionHighlight {
+  color: var(--teal);
+  font-size: calc(12px + 2vw);
+  font-weight: 800;
+}
+
+.subbanner__captionHighlightRed {
+  color: var(--red);
+  font-size: calc(12px + 2vw);
+  font-weight: 800;
+}

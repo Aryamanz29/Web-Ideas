@@ -1,0 +1,10 @@
+.admin {
+  text-align: center;
+}
+
+.admin > h3 {
+  background-color: var(--danger);
+  padding: 20px;
+  border-radius: 21px;
+  color: var(--light);
+}

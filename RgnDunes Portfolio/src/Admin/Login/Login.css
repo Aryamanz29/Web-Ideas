@@ -1,0 +1,37 @@
+.login {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 75vh;
+}
+
+.login > .login__content {
+  text-align: center;
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+}
+
+.login > .login__content > h3 {
+  color: var(--success);
+  font-weight: 900;
+}
+
+.login > .login__content > img {
+  padding: 20px;
+}
+
+.login > .login__content > button {
+  padding: 20px;
+  border: 1px solid var(--success);
+  color: var(--success);
+  font-weight: 900;
+  transition: all 0.25s ease-in-out;
+}
+
+.login > .login__content > button:hover {
+  border-radius: 13px;
+  box-shadow: 10px 10px 10px 3px rgb(21 21 21 / 20%);
+}

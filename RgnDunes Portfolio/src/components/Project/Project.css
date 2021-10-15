@@ -1,0 +1,84 @@
+.project {
+  width: 350px;
+  padding: 40px;
+  background: white;
+  box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 20px;
+  background: transparent;
+  transition: all 100ms linear;
+}
+
+.project:hover {
+  transform: scale(0.9);
+  background: var(--light);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.project__icon > img {
+  object-fit: contain;
+  width: 80px;
+  height: 80px;
+  transition: 3s;
+}
+
+.project__contentBox {
+  padding: 10px;
+  border-radius: 11px;
+}
+
+.project__contentBox > h5 {
+  color: #28a745;
+  font-weight: 900;
+}
+
+.project__contentBox,
+h3,
+h6,
+p,
+.project__skills {
+  background: transparent;
+}
+
+.project__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project__skill {
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 10px 3px rgb(21 21 21 / 20%);
+  background-color: #dee2ff;
+  border-radius: 999px;
+}
+
+.project__buttons {
+  margin-top: 20px;
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  background: transparent;
+}
+
+.project__button {
+  border: 1px solid #3498db;
+  color: #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.6s;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  box-shadow: 10px 10px 10px 3px rgb(21 21 21 / 20%);
+}
