@@ -1,0 +1,38 @@
+.skills {
+  display: grid;
+  width: 100vw;
+  place-items: center;
+}
+
+.skills > h2 {
+  text-align: center;
+  color: var(--primary);
+  font-size: calc(20px + 2vw);
+  font-weight: 900;
+  -webkit-text-stroke: 1px var(--indigo);
+  font-family: "Source Code Pro", monospace;
+  background-color: none;
+}
+
+.skills__badgesContainer {
+  width: 60vw;
+}
+
+.skills__badges {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills__badges > img {
+  padding: 15px;
+  object-fit: contain;
+  height: 50px;
+  transition: 0.25s ease-in-out;
+}
+
+.skills__badges > img:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,20 @@
+.adminControls__greeting {
+  display: grid;
+  place-items: center;
+}
+
+.adminControls > .adminControls__greeting > h3 {
+  background-color: #8ecdfd85;
+  padding: 10px;
+  color: var(--orange);
+  border-radius: 14px;
+}
+
+.adminControls > .adminControls__greeting > h5 {
+  background-color: #28a745;
+  backdrop-filter: blur(15px);
+  padding: 10px;
+  color: var(--light);
+  border-radius: 14px;
+  margin-top: 10px;
+}

@@ -1,0 +1,44 @@
+.addmobilephotography {
+  margin-top: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.addmobilephotography > .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gray);
+  padding: 20px;
+  border-radius: 13px;
+  width: 70%;
+}
+
+.addmobilephotography > .form > input[type="url"] {
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  border-bottom: 1px solid var(--gray);
+  margin-top: 20px;
+}
+
+.addmobilephotography > .form > input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 800;
+  border: 1px solid var(--primary);
+  width: 50px;
+  border-radius: 13px;
+  background-color: var(--primary);
+  color: white;
+  transition: all 200ms linear;
+}
+
+.addmobilephotography > .form > input[type="submit"]:hover {
+  box-shadow: 10px 10px 10px 3px rgb(21 21 21 / 20%);
+}
