@@ -10,23 +10,77 @@
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome" /> <a href="https://github.com/Aryamanz29/Web-Dev-Ideas/pulls" target="_blank"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Aryamanz29/Web-Dev-Ideas?style=for-the-badge" /></a> <a href="https://github.com/Aryamanz29/Web-Dev-Ideas/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Aryamanz29/Web-Dev-Ideas?style=for-the-badge" /></a> 
-<div align="center">
- 
- </div>
 
 
-## Submit your projects and ideas here 🎉
+# How Can I Contribute?
 
-- This repository has collection of `Web-Dev related` projects. </p>
-- Consider leaving a ⭐ here.
-- Check out more `beginner-friendly` web-related projects & issues here.
-- You can create new issues for your project.
+Don't know how to start of open source and Contribute to our Open Source Project ? Welcome to the world of hacking!
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+The steps to follow to contribute to any projects:
 
-<img src="https://user-images.githubusercontent.com/56113566/136356202-8e9cea74-46d7-4f06-9bff-6a792bcc7e4d.jpg" height="300px" width="1000">
+1.  #### If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+2.  ## Fork this repository
+
+    Fork this repository by clicking on the fork button on the top of this page.
+    This will create a copy of this repository in your account.
+
+3.  ## Clone the repository
+
+    Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
+
+    Open a terminal and run the following git command:
+
+    ```
+    git clone "url you just copied"
+    ```
+
+4.  ### Add a upstream link to main branch in your cloned repo
+    ```
+    git remote add upstream <original repository>
+    ```
+5.  ### Keep your cloned repo upto date by pulling from upstream
+    This will also avoid any merge conflicts while committing new changes
+    ```
+    git pull upstream main
+    ```
+6.  ### Create your feature branch
+    Always create new branch
+    ```
+    git checkout -b <feature-name>
+    ```
+7.  ### Track your changes
+    ```
+    git add .
+    ```
+8.  ### Check for your changes.
+    ```
+    git status
+    ```
+9.  ### Commit all the changes
+    Write commit message as "Small Message"
+    ```
+    git commit -m "Write a meaningfull but small commit message"
+    ```
+10. ### Push the changes for review
+    ```
+    git push origin <branch-name>
+    ```
+11. ### Create a PR on Github.
+        Just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing
+    <hr>
+
+## 🔥 What will happen after my contribution?
+
+I have created a simple page to display all contributors list [here](https://github.com/Aryamanz29/Web-Dev-Ideas/graphs/contributors), your name should appear shortly after the pull request is merged.
+
+---
+
+# ❓ What I have to do?
+
+You can add any codes in any language by creating its respective folder (if already not available).
+
+---
 
 <h2 align="center"> Project Admin 👨‍💻</h2>
 
