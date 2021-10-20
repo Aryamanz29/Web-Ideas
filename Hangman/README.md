@@ -8,3 +8,5 @@
    
 ## Game
 
+![](https://github.com/avi-11/Web-Ideas/blob/master/Hangman/img1.png)
+![](https://github.com/avi-11/Web-Ideas/blob/master/Hangman/img2.png)
