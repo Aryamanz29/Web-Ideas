@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RealTime ChatRooms</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- CSS only -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+
+		<!-- JS, Popper.js, and jQuery -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body>
+		<div class="limiter">
+			<div class="container-login">
+				<div class="wrap-login">
+					<form class="login-form validate-form" action="chatroom.html">
+						<span class="login-form-title"> User Credentials </span>
+
+						<div class="wrap-input validate-input">
+							<input
+								class="input"
+								type="text"
+								name="username"
+								id="users"
+								placeholder="Username"
+								required="true"
+							/>
+							<span class="focus-input"></span>
+							<span class="symbol-input">
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<div class="wrap-input validate-input">
+							<select
+								class="form-control input"
+								name="room"
+								id="room-name"
+								required="true"
+							>
+								<option value="">Rooms</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+							</select>
+							<span class="focus-input"></span>
+							<span class="symbol-input">
+								<i class="fa fa-unlock" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<div class="heading--third-party-logins text-center pt-2">
+							or enter rooms using
+						</div>
+						<div
+							class="signin d-flex justify-content-center third-party-logins"
+						>
+							<i
+								class="fa fa-facebook-official third-party-icons"
+								aria-hidden="true"
+							></i>
+							<i
+								class="fa fa-twitter-square third-party-icons"
+								aria-hidden="true"
+							></i>
+							<i class="fa fa-google third-party-icons" aria-hidden="true"></i>
+						</div>
+
+						<div class="container-login-form-btn">
+							<button class="login-form-btn">Enter Room</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
