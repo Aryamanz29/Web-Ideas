@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #17252a;
+}
+.myNav{
+    background-color: #3aafa9;
+    text-align: center;
+}
+.logo{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #17252a;
+    font-size: 45px;
+    cursor: pointer;
+    padding: 10px;
+}
+.logo:hover{
+    color: #010202;
+}
+
+.contentselect{
+    width: 340px;
+    margin: auto;
+    margin-top: -10px;
+}
+.bsize{
+    color:white;
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 15px;
+}
+.toptext{
+    color:white;
+    text-align: center;
+    margin-top: -14px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    outline: none;
+    color: white;
+    user-select: none;
+    border-radius: 8px;
+    border-color: gray;
+    border-width: 2px;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
+.mysize{
+    color:white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+.hintBtn{
+    outline: none;
+    color: yellowgreen;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: yellowgreen;
+    margin-left: 130px;
+}
+.hintBtn:hover{
+    color: rgb(119, 156, 45);
+    border-color: rgb(119, 156, 45);
+}
+.myrules{
+    color:rgb(163, 163, 163);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+.myrules:hover{
+    color: rgb(117, 117, 117);
+    cursor: pointer;
+}
