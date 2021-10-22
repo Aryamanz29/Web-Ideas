@@ -1,8 +1,8 @@
-Weather App
+#Weather App#
 
   This application fetches and displays the weather of the city and State You have choosen
 
-Screenshots
+#Screenshots#
 
   ![image](https://user-images.githubusercontent.com/56113584/138439266-6736a91e-7550-4f8d-ab4d-2a54e752d6ca.png)
 
