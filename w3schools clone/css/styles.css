@@ -1,0 +1,1160 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@600&family=Open+Sans&display=swap");
+/* font-family: 'Encode Sans Semi Expanded', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+/* universal selectors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+/* Horizontal overflow fix*/
+body {
+  overflow-x: hidden;
+}
+
+/* header */
+.header {
+  padding: 1rem;
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100vw;
+}
+.logo h2 {
+  font-family: "Open Sans Semi Expanded", sans-serif;
+  color: rgb(71, 67, 67);
+  font-size: 2rem;
+}
+
+.logo span {
+  color: rgb(85, 179, 98);
+}
+.login-btn {
+  color: white;
+  background: rgb(85, 179, 98);
+  border: none;
+  text-transform: uppercase;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+/* Width fix for logo overflow in smaller screen*/
+@media screen and (max-width: 480px) {
+  .logo h2 {
+    font-size: 1.4rem;
+  }
+  .login-btn {
+    font-size: 0.8rem;
+  }
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  background: rgb(67, 145, 77);
+}
+.login {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.sentence {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .sentence {
+    display: grid;
+    align-items: center;
+  }
+  .sentence h5 {
+    justify-self: end;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    color: rgb(68, 70, 60);
+  }
+  .header {
+    grid-template-columns: 3fr 4fr 1fr;
+  }
+  .logo h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* end of header  */
+
+/* 
+=================================
+
+Navbar
+
+================================= 
+*/
+.navbar {
+  background: rgb(35, 179, 98);
+  /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+  width: 100vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.nav-list li {
+  display: none;
+}
+.nav-list li:hover {
+  cursor: pointer;
+}
+.dark-btn-container {
+  display: none;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+}
+.nav-btn {
+  border: none;
+  background: transparent;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.nav-btn-container {
+  height: 100%;
+  display: grid;
+}
+.nav-btn-container :hover {
+  background: white;
+  cursor: pointer;
+}
+.nav-btn-container:hover .nav-btn {
+  color: black;
+}
+.dark-btn-container {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .dark-btn-container {
+    display: grid;
+  }
+  .navbar {
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 800px) {
+  .navbar-btn-container {
+    display: none;
+  }
+  .navbar {
+    grid-template-columns: 17fr 1fr 1fr 1fr;
+  }
+
+  /* .nav-list li{
+    display: grid;
+  } */
+  .nav-list li {
+    /* display: block; */
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 4px;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    justify-items: center;
+    padding: 2px;
+  }
+  .nav-list :hover {
+    background: rgba(253, 255, 255, 0.986);
+    color: black;
+  }
+  .nav-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
+    grid: 0;
+    margin: 0;
+  }
+}
+
+/* 
+============================
+
+Navbar menu for smaller screen 
+
+============================
+ */
+.nav-menu-small {
+  background: #f1f1f1;
+  padding-bottom: 2rem;
+  display: none;
+}
+.nav-menu-list-container {
+  width: 100%;
+  text-align: center;
+}
+.nav-menu-lists-container {
+  display: grid;
+  place-items: center;
+  /* row-gap: 1rem; */
+}
+.nav-menu-list-container h3 {
+  font-size: 1.1rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.nav-menu-list-container h3:hover {
+  background: rgba(114, 111, 111, 0.4);
+  cursor: pointer;
+}
+.nav-menu-list-container span {
+  align-items: center;
+}
+/* End of Navbar menu for smaller screen */
+
+/* Login btn window */
+
+.login-window {
+  background: #f1f1f1;
+  display: grid;
+  text-align: center;
+  row-gap: 1rem;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  padding-bottom: 1rem;
+  display: none;
+  -webkit-box-shadow: 1px 5px 19px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 5px 19px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 5px 19px -4px rgba(0, 0, 0, 0.75);
+}
+.close-btn-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.close-btn-icon {
+  right: 0;
+  top: 0;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.close-btn:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+.login-window h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  /* color: rgb(97, 97, 97); */
+  font-family: "Times New Roman", Times, serif;
+}
+.login-window p {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.login-window p:hover {
+  cursor: pointer;
+}
+.login-form {
+  display: grid;
+  place-items: center;
+  justify-self: center;
+
+  text-align: center;
+  width: 80vw;
+  max-width: 800px;
+  grid-template-columns: 1fr;
+
+  /* width: 800px; */
+}
+.username {
+  font-size: 1.3rem;
+  padding: 1rem;
+  max-width: 700px;
+  min-width: 100%;
+  /* text-align: start; */
+  justify-content: center;
+}
+.login-form .tryItYourself {
+  border-radius: 4px;
+  text-transform: capitalize;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.username p {
+  text-align: start;
+  text-decoration: none;
+  justify-content: centre;
+}
+.email-input {
+  /* min-width: 80vw; */
+  width: 100%;
+  /* text-align: center; */
+  /* line-height: 2rem; */
+  padding: 4px;
+  font-size: 1.3rem;
+}
+
+/* End of login btn window */
+
+/* 
+======================================
+
+General styling for  different windows
+
+======================================
+ */
+
+.window {
+  background: #f1f1f1;
+  /* padding-left: 1rem; */
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.window-list-container {
+  padding: 2rem;
+  padding-top: 0;
+}
+.window h1 {
+  padding-bottom: 10px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+}
+.window-list {
+  display: grid;
+}
+.window-list-items {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 1.1rem;
+}
+.window-list-items:hover {
+  cursor: pointer;
+  background: rgba(114, 111, 111, 0.4);
+}
+
+/* End of general styling for different windows */
+
+/* Tutorial window */
+.tutorial-window-lists-container {
+  display: grid;
+  grid-template-areas:
+    "a b c d"
+    "a b e d"
+    "a b e d"
+    "a f e d"
+    "a f e d"
+    "a f e z"
+    "a f e z"
+    "y f w z";
+  gap: 0;
+}
+.htmlcssList {
+  grid-area: a;
+}
+.javascriptList {
+  grid-area: b;
+}
+.serverSideList {
+  grid-area: c;
+}
+.programmingList {
+  grid-area: f;
+}
+.webBuildingList {
+  grid-area: e;
+}
+.xmlList {
+  grid-area: d;
+}
+
+/* End of Tutorial Window */
+
+/* Reference Window */
+.reference-window-lists-container {
+  display: grid;
+  gap: 0;
+  grid-template-areas:
+    "a b c d"
+    "a b e d"
+    "a b e f"
+    "g h e f"
+    "g h e f";
+}
+.html-reference-list {
+  grid-area: a;
+}
+.css-reference-list {
+  grid-area: g;
+}
+.javascript-reference-list {
+  grid-area: b;
+}
+.programming-reference-list {
+  grid-area: h;
+}
+.xml-reference-list {
+  grid-area: e;
+}
+.server-side-reference-list {
+  grid-area: c;
+}
+.character-set-reference-list {
+  grid-area: d;
+}
+
+/* End of Reference Window */
+
+/* Examples Window */
+
+.examples-window-lists-container {
+  display: grid;
+  gap: 0;
+  grid-template-areas:
+    "a b c d"
+    "a b e d"
+    "a f e d"
+    "a f e d"
+    "a f e d";
+}
+.htmlCssExamples {
+  grid-area: a;
+}
+.javaScriptExamples {
+  grid-area: b;
+}
+.programmingExamples {
+  grid-area: f;
+}
+.quizzes {
+  grid-area: d;
+}
+.xmlExamples {
+  grid-area: e;
+}
+.serverSideExamlpes {
+  grid-area: c;
+}
+
+/* End of Examples Window */
+
+/* Exercises Window */
+.exercises-window-lists-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* End of Exercises Window */
+
+/* 
+======================
+
+Body 
+
+======================
+ */
+
+/* Container of sidebar and main content */
+.container {
+  width: 100vw;
+  display: grid;
+  position: relative;
+}
+@media screen and (min-width: 772px) {
+  .container {
+    grid-template-columns: 3fr 13fr;
+  }
+}
+/* End of container style */
+
+/* sidebar  */
+
+.sidebar {
+  display: none;
+
+  box-shadow: 2px 2px 2px #9b9898a2;
+}
+.sidebar-content {
+  display: grid;
+  max-height: 2100px;
+}
+
+@media screen and (min-width: 772px) {
+  .sidebar {
+    display: grid;
+  }
+}
+.sidebar h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+.sidebar-li {
+  display: grid;
+}
+.sidebar-list li {
+  font-size: 1.1rem;
+  padding: 1px;
+  padding-left: 15px;
+}
+.sidebar-list li:hover {
+  background: rgba(114, 111, 111, 0.4);
+  cursor: pointer;
+}
+/* end of sidebar */
+
+/* Main Content */
+
+.main-content {
+  /* padding: 2rem; */
+  padding-left: 2px;
+  /* height: auto; */
+  /* display: grid; */
+  /* row-gap: 4rem; */
+}
+
+/* Global classes for main-content section */
+
+.language-section {
+  padding: 2rem;
+  /* padding-left: 10px; */
+  margin-top: 20px;
+}
+/* End of global classes for main section */
+.code-section {
+  display: none;
+  padding: 10px;
+  padding-left: 20px;
+  max-height: 400px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-box-shadow: -2px 3px 25px -5px rgba(130, 130, 130, 1);
+  -moz-box-shadow: -2px 3px 25px -5px rgba(130, 130, 130, 1);
+  box-shadow: -2px 3px 25px -5px rgba(130, 130, 130, 1);
+}
+.code-section h3 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  letter-spacing: 1px;
+  font-weight: normal;
+  padding-bottom: 14px;
+}
+.code-box {
+  background: white;
+  padding: 25px;
+  border-left: solid 4px rgb(85, 179, 98);
+  letter-spacing: 1px;
+}
+
+.about-section {
+  width: 100%;
+  max-height: 400px;
+}
+.tryItYourself-container {
+  padding-top: 1rem;
+}
+.tryItYourself {
+  background: rgb(85, 179, 98);
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.tryItYourself:hover {
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2),
+    4px 4px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.tryItYourself span {
+  font-size: 10px;
+}
+.learn-btn-container {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+@media screen and (min-width: 400px) {
+  .learn-btn {
+    font-size: 1rem;
+  }
+  .learn-btn-container {
+    grid-template-columns: auto auto;
+  }
+}
+.about-section h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 7px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: rgb(97, 97, 97);
+}
+.about-section p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgb(97, 97, 97);
+}
+.learn-btn {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  /* letter-spacing: 3px; */
+  /* font-size: 1rem; */
+  background: rgb(97, 97, 97);
+  color: white;
+  padding: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 5px;
+  max-width: 216px;
+}
+.learn-btn:hover {
+  color: black;
+  background: #ccc;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 772px) {
+  .code-section {
+    display: grid;
+    background: #f1f1f1f1;
+  }
+  .language-section {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 0;
+    row-gap: 2rem;
+    max-height: 900px;
+  }
+  .about-section h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .language-section {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+/* End of global classes for main-content */
+
+/* HTML section */
+
+.tagstart {
+  color: mediumblue;
+}
+.docHtml {
+  color: red;
+}
+.html-tag {
+  color: brown;
+}
+
+/* End of html section */
+
+/* CSS section */
+
+@media screen and (min-width: 992px) {
+  .css-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+  }
+  .css-section .about-section {
+    grid-area: b;
+  }
+  .css-section .code-section {
+    grid-area: a;
+  }
+}
+.css-property-name {
+  color: red;
+}
+.css-property-value {
+  color: blue;
+}
+.css-section {
+  background: #f1f1f1f1;
+}
+.css-section article {
+  box-shadow: none;
+}
+/* End of css section */
+
+/* SQL section */
+.blue {
+  color: blue;
+}
+.brown {
+  color: brown;
+}
+@media screen and (min-width: 992px) {
+  .sql-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+  }
+  .sql-section .about-section {
+    grid-area: b;
+  }
+  .sql-section .code-section {
+    grid-area: a;
+  }
+}
+.sql-section {
+  background: #f1f1f1f1;
+}
+.sql-section article {
+  box-shadow: none;
+}
+
+/* End of SQL section */
+
+/* Learn php,python,java,jQuery */
+.learn-boxes {
+  background: rgb(97, 97, 97);
+  display: grid;
+  row-gap: 2rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.learn-box {
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  row-gap: 1rem;
+}
+.learn-box .learn-btn {
+  margin-top: 10px;
+}
+@media screen and (min-width: 992px) {
+  .learn-boxes {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    /* height: 100vh; */
+  }
+  .learn-box h2 {
+    font-size: 2rem;
+    color: rgb(68, 70, 60);
+  }
+  .learn-box p {
+    font-size: larger;
+  }
+}
+.learn-box p {
+  color: rgb(97, 97, 97);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* End of Learn boxes */
+
+/* Library section */
+.library-section {
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  row-gap: 4rem;
+}
+.library-section h1 {
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: rgb(97, 97, 97);
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.library-section p {
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: gray;
+}
+.library-section .learn-btn {
+  justify-self: center;
+}
+@media screen and (min-width: 992px) {
+  .library-section {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .library-section h1 {
+    font-size: 2.5rem;
+  }
+}
+.w3css h1 {
+  text-transform: uppercase;
+}
+.w3css,
+.bootstrap,
+.color-picker {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  /* align-items: center; */
+  row-gap: 1.5rem;
+}
+
+.bootstrap .learn-btn-container {
+  grid-template-columns: 1fr;
+}
+.color-picker-image {
+  height: 100%;
+  width: 100%;
+}
+.color-picker-image-container {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.color-picker-image-container :hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* End of Library Section */
+
+/* Exercises Section */
+.exercises-section {
+  background: rgb(97, 97, 97);
+  color: white;
+  /* text-align: center; */
+  display: grid;
+  /* place-items: center; */
+  /* justify-content: center; */
+  align-items: center;
+  /* place-items: center; */
+
+  row-gap: 2rem;
+  padding: 2rem 1rem;
+}
+.exercises-section h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: lighter;
+  justify-self: center;
+}
+.exercises-section p {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  justify-self: center;
+}
+
+.php,
+.java,
+.jQuery,
+.cplus,
+.csharp {
+  display: none;
+}
+.exercises-btn-container {
+  padding: 2rem;
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.sql-exercise span {
+  font-size: 1rem;
+}
+.python-exercise span {
+  font-size: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .exercises-btn-container {
+    grid-template-areas:
+      "a a a a a b b b b b c c c c c "
+      "d d d e e e f f f g g g h h h";
+  }
+  .html-exercise {
+    grid-area: a;
+  }
+  .css-exercise {
+    grid-area: b;
+  }
+  .js-exercise {
+    grid-area: c;
+  }
+  .sql-exercise {
+    grid-area: d;
+    display: block;
+  }
+  .python-exercise {
+    grid-area: e;
+    display: block;
+  }
+  .php {
+    grid-area: f;
+    display: block;
+  }
+  .jQuery {
+    grid-area: g;
+    display: block;
+  }
+  .java {
+    grid-area: h;
+    display: block;
+  }
+  .tryItYourself span {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .exercises-btn-container {
+    grid-template-areas:
+      "a a a a a a a b b b b b b b c c c c c c c"
+      "d d d e e e f f f g g g h h h i i i j j j";
+    column-gap: 1rem;
+  }
+  .exercises-section .tryItYourself {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .cplus {
+    display: block;
+    grid-area: i;
+  }
+  .csharp {
+    display: block;
+    grid-area: j;
+  }
+}
+
+/* End of Exercises Section */
+
+/* Template Section */
+.template-section {
+  display: grid;
+  padding: 2rem;
+  row-gap: 2rem;
+  background: #f1f1f1;
+  text-align: center;
+}
+.template-section h1 {
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.template-section p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.template-img-container {
+  justify-self: center;
+  display: grid;
+  place-items: center;
+}
+.template-img {
+  max-width: 70vw;
+}
+.template-section .learn-btn {
+  justify-self: center;
+}
+.template-section button {
+  width: 50vw;
+}
+
+/* End of Template Section */
+
+/* How to section */
+.how-to-section {
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  row-gap: 1rem;
+}
+.how-to-section h1 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: rgb(97, 97, 97);
+  text-align: center;
+}
+.how-to-section p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: rgb(71, 67, 67);
+  text-align: center;
+}
+.how-to-section button {
+  width: 50vw;
+}
+
+/* End of How to section */
+
+/* Certificate Section */
+.certificate-section {
+  background: linear-gradient(rgba(97, 97, 97, 0.4), rgba(0, 0, 0, 0.7)),
+    url("../images/certificate.jpg") center/cover no-repeat;
+  min-height: 319px;
+  /* max-width: 800px; */
+  width: 100%;
+  /* padding: 8rem; */
+  justify-self: center;
+  /* padding: 4rem; */
+  padding-top: 0;
+  display: grid;
+  object-fit: contain;
+  background-size: cover;
+  align-items: flex-start;
+  row-gap: 4rem;
+  height: 100%;
+}
+.certificate-heading-container {
+  max-width: 100%;
+  color: white;
+  display: grid;
+  row-gap: 1rem;
+}
+.certificate-heading-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+.certificate-heading-container h6 {
+  font-size: 1rem;
+  text-align: center;
+}
+.certificate-heading-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+}
+.certificate-btn-container {
+  text-align: center;
+}
+.certificate-btn-container button {
+  padding: 1rem;
+}
+.certificate-btn-container button:hover {
+  background: white;
+  color: black;
+}
+@media screen and (min-width: 600px) {
+  .certificate-heading-container {
+    background: rgba(0, 0, 0, 0.19);
+  }
+}
+.space-filler {
+  min-height: 150px;
+}
+@media screen and (min-width: 992px) {
+  .certificate-section-container {
+    background: black;
+    display: flex;
+    justify-content: center;
+  }
+  .certificate-section {
+    width: 80%;
+  }
+}
+
+/* End of Certificate Section */
+
+/* footer */
+.footer {
+  background: rgb(97, 97, 97);
+  padding: 2rem;
+  padding-top: 2rem;
+  display: grid;
+  row-gap: 2rem;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+  align-self: center;
+}
+.btn-forum {
+  display: grid;
+  /* grid-template-columns: 1fr auto; */
+}
+.footer-btn {
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.986);
+  color: rgb(97, 97, 97);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  margin: 2px;
+}
+.footer-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-btn:hover {
+  cursor: pointer;
+  background: rgb(255, 255, 255, 0.8);
+}
+.hover-green {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+.hover-green:hover {
+  color: rgb(67, 145, 77);
+  cursor: pointer;
+}
+.btn-forum {
+  display: grid;
+  row-gap: 1rem;
+}
+.footer-content {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.like {
+  color: white;
+  justify-self: center;
+  font-size: 2rem;
+}
+.footer .tryItYourself {
+  max-width: 300px;
+  justify-self: center;
+}
+@media screen and (min-width: 992px) {
+  .btn-forum {
+    grid-template-columns: 1fr auto;
+  }
+  .footer-btn-container {
+    justify-content: start;
+  }
+}
+
+/* End of footer */
+/* End of Main Content  */

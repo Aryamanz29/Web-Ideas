@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>w3schools</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/e54ef143c3.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <!-- header section  -->
+
+    <header class="header">
+      <article class="logo">
+        <h2>w3schools<span>.com</span></h2>
+      </article>
+      <article class="sentence">
+        <h5>THE WORLD'S LARGEST WEB DEVELOPER SITE</h5>
+      </article>
+      <article class="login">
+        <button class="login-btn" id="login-btn">log in</button>
+      </article>
+    </header>
+
+    <!-- End of header  -->
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div
+        class="navbar-btn-container nav-btn-container"
+        id="navbar-btn-container"
+      >
+        <button class="navbar-btn nav-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <ul class="nav-list">
+        <li id="tutorial-window-open">
+          tutorials
+          <span
+            ><i
+              class="fas fa-caret-down window-icon"
+              id="tutorial-window-icon"
+            ></i
+          ></span>
+        </li>
+        <li id="reference-window-open">
+          references
+          <span
+            ><i
+              class="fas fa-caret-down window-icon"
+              id="reference-window-icon"
+            ></i
+          ></span>
+        </li>
+        <li id="examples-window-open">
+          examples
+          <span
+            ><i
+              class="fas fa-caret-down window-icon"
+              id="examples-window-icon"
+            ></i
+          ></span>
+        </li>
+        <li id="exercises-window-open">
+          exercises
+          <span
+            ><i
+              class="fas fa-caret-down window-icon"
+              id="exercises-window-icon"
+            ></i
+          ></span>
+        </li>
+        <li>certificates</li>
+      </ul>
+      <div class="dark-btn-container nav-btn-container" id="dark-btn-container">
+        <button class="dark-btn nav-btn"><i class="fas fa-adjust"></i></button>
+      </div>
+      <div class="translate-btn-container nav-btn-container">
+        <button class="translate-btn nav-btn">
+          <i class="fas fa-globe-americas"></i>
+        </button>
+      </div>
+      <div class="search-btn-container nav-btn-container">
+        <button class="search-btn nav-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- End of Navbar  -->
+
+    <!-- Navbar menu for smaller screen -->
+    <div class="nav-menu-small" id="nav-menu-small">
+      <div class="close-btn-container">
+        <div class="close-btn close-nav-menu" id="close-nav-menu">
+          <i class="fas fa-times close-btn-icon"></i>
+        </div>
+      </div>
+      <div class="nav-menu-lists-container">
+        <!-- Single list container -->
+        <article class="nav-menu-list-container">
+          <h3>
+            Tutorials <span><i class="fas fa-caret-down"></i></span>
+          </h3>
+        </article>
+        <!-- End of single list container -->
+
+        <!-- Single list container -->
+        <article class="nav-menu-list-container">
+          <h3>
+            References <span><i class="fas fa-caret-down"></i></span>
+          </h3>
+        </article>
+        <!-- End of single list container -->
+
+        <!-- Single list container -->
+        <article class="nav-menu-list-container">
+          <h3>
+            Examples <span><i class="fas fa-caret-down"></i></span>
+          </h3>
+        </article>
+        <!-- End of single list container -->
+
+        <!-- Single list container -->
+        <article class="nav-menu-list-container">
+          <h3>
+            Exercises <span><i class="fas fa-caret-down"></i></span>
+          </h3>
+        </article>
+        <!-- End of single list container -->
+
+        <!-- Single list container -->
+        <article class="nav-menu-list-container">
+          <h3>Certificates</h3>
+        </article>
+        <!-- End of single list container -->
+
+        <!-- Single list container -->
+        <article class="nav-menu-list-container">
+          <h3>Shops</h3>
+        </article>
+        <!-- End of single list container -->
+      </div>
+    </div>
+
+    <!-- End of navbar menu for smaller screen -->
+
+    <!-- Login btn window -->
+    <div class="login-window" id="login-window">
+      <div class="close-btn-container">
+        <div class="close-btn close-login-window" id="close-login-window">
+          <i class="fas fa-times close-btn-icon"></i>
+        </div>
+      </div>
+      <h1>log in</h1>
+      <p>Why log in?</p>
+      <form class="login-form">
+        <div class="username">
+          <p>Username</p>
+
+          <input
+            type="email"
+            placeholder="Enter your e-mail address"
+            class="email-input"
+          />
+        </div>
+        <div class="password username">
+          <p>password</p>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            class="email-input"
+          />
+        </div>
+        <div class="tryItYourself-btn-container">
+          <button class="tryItYourself">log in</button>
+        </div>
+      </form>
+
+      <p class="new-user">New User? <span>sign up for free</span></p>
+      <p class="forgot-password">Forgot password?</p>
+    </div>
+    <!-- End of Login window btn -->
+
+    <!-- Tutorial window -->
+    <div class="tutorial-window window" id="tutorial-window">
+      <div class="close-btn-container">
+        <div class="close-btn close-tutorial-window" id="close-tutorial-window">
+          <i class="fas fa-times close-btn-icon"></i>
+        </div>
+      </div>
+      <div class="tutorial-window-lists-container window-lists-container">
+        <!-- html css List -->
+        <article class="htmlcssList window-list-container">
+          <h1>HTML and CSS</h1>
+          <ul class="tutorial-window-list window-list">
+            <li class="tutorial-window-list-items window-list-items">
+              Learn HTML
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn CSS
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Bootstrap
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn W3.CSS
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Colors
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Canvas
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn SVG
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Icons
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Graphics
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn How To
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Sass
+            </li>
+          </ul>
+        </article>
+        <!-- End of html list -->
+        <!-- Javascript List -->
+        <article class="javascriptList window-list-container">
+          <h1>JavaScript</h1>
+          <ul class="tutorial-window-list window-list">
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Javascript
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn jQuery
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn React
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn AngularJS
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn JSON
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn AJAX
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn AppML
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn W3.JS
+            </li>
+          </ul>
+        </article>
+        <!-- End of JavaScript List -->
+
+        <!-- Server Side List -->
+        <article class="serverSideList window-list-container">
+          <h1>Server Side</h1>
+          <ul class="tutorial-window-list window-list">
+            <li class="tutorial-window-list-items window-list-items">
+              Learn SQL
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn PHP
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn ASP
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Node.js
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Raspberry Pi
+            </li>
+          </ul>
+        </article>
+        <!-- End of Server Side List -->
+
+        <!-- Programming List -->
+        <article class="programmingList window-list-container">
+          <h1>Programming</h1>
+          <ul class="tutorial-window-list window-list">
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Python
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Java
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn C++
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn C#
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn Machine Learning
+            </li>
+          </ul>
+        </article>
+        <!-- End of Programming List -->
+
+        <!-- Web Building List -->
+        <article class="webBuildingList window-list-container">
+          <h1>Web Building</h1>
+          <ul class="tutorial-window-list window-list">
+            <li class="tutorial-window-list-items window-list-items">
+              Web Templates
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Web Statistics
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Web Certificates
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Web Editor
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Web Development
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Test Your Typing Speed
+            </li>
+          </ul>
+        </article>
+        <!-- End of Web Building List -->
+
+        <!-- XML Tutorials List -->
+        <article class="xmlList window-list-container">
+          <h1>XML Tutorials</h1>
+          <ul class="tutorial-window-list window-list">
+            <li class="tutorial-window-list-items window-list-items">
+              Learn XML
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn XML AJAX
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn XML DOM
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn XML DTD
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn XML Schema
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn XSLT
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn XPath
+            </li>
+            <li class="tutorial-window-list-items window-list-items">
+              Learn XQuery
+            </li>
+          </ul>
+        </article>
+        <!-- End of XML Tutorials List -->
+      </div>
+    </div>
+    <!-- End of tutorial window -->
+
+    <!-- Reference Window -->
+
+    <div class="reference-window window" id="reference-window">
+      <div class="close-btn-container">
+        <div
+          class="close-btn close-reference-window"
+          id="close-reference-window"
+        >
+          <i class="fas fa-times close-btn-icon"></i>
+        </div>
+      </div>
+      <div class="reference-window-lists-container window-lists-container">
+        <!-- HTML Reference List -->
+        <article class="html-reference-list window-list-container">
+          <h1>HTML</h1>
+          <ul class="reference-window-list window-list">
+            <li class="window-list-items reference-window-list-items">
+              HTML Tag Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Browser Support
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Event Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Color Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Attribute Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Canvas Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML SVG Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              Google Maps Reference
+            </li>
+          </ul>
+        </article>
+        <!-- End of HTML Reference List -->
+
+        <!-- CSS Reference List -->
+        <article class="css-reference-list window-list-container">
+          <h1>CSS</h1>
+          <ul class="reference-window-list window-list">
+            <li class="window-list-items reference-window-list-items">
+              CSS Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              CSS Browser Support
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              CSS Selector Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              Bootstrap 3
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              Bootstrap 4
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              W3.CSS Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              Icons Reference
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              Sass Reference
+            </li>
+          </ul>
+        </article>
+        <!-- End of CSS Reference List -->
+
+        <!-- Javascript Reference List -->
+        <article class="javascript-reference-list window-list-container">
+          <h1>JavaScript</h1>
+          <ul class="window-list reference-window-list">
+            <li class="reference-window-list-items window-list-items">
+              JavaScript Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              JS DOM Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              jQuery Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              AngularJS Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              AppML Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              W3.JS Reference
+            </li>
+          </ul>
+        </article>
+
+        <!-- End of Javascript Reference List -->
+
+        <!-- Programming Reference List -->
+        <article class="programming-reference-list window-list-container">
+          <h1>Programming</h1>
+          <ul class="reference-window-list window-list">
+            <li class="reference-window-list-items window-list-items">
+              Python Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              Java Reference
+            </li>
+          </ul>
+        </article>
+        <!-- End Of Programming Reference  List -->
+
+        <!-- Server Side Reference List -->
+        <article class="window-list-container server-side-reference-list">
+          <h1>Server Side</h1>
+          <ul class="reference-window-list window-list">
+            <li class="reference-window-list-items window-list-items">
+              SQL Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              PHP Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              ASP Reference
+            </li>
+          </ul>
+        </article>
+
+        <!-- End of Server Side List -->
+
+        <!-- XML Reference List -->
+        <article class="window-list-container xml-reference-list">
+          <h1>XML</h1>
+          <ul class="reference-window-list window-list">
+            <li class="reference-window-list-items window-list-items">
+              XML DOM Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              XML http Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              XSLT Reference
+            </li>
+            <li class="reference-window-list-items window-list-items">
+              XML Schema Reference
+            </li>
+          </ul>
+        </article>
+
+        <!-- End of XML Reference List -->
+
+        <!-- Character Sets Reference List -->
+        <article class="window-list-container character-set-reference-list">
+          <h1>Character Sets</h1>
+          <ul class="window-list reference-window-list">
+            <li class="window-list-items reference-window-list-items">
+              HTML Character Sets
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML ASCII
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML ANSI
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Windows-1252
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML ISO
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML Symbols
+            </li>
+            <li class="window-list-items reference-window-list-items">
+              HTML UTF-8
+            </li>
+          </ul>
+        </article>
+
+        <!--End  of Character Sets Reference List -->
+      </div>
+    </div>
+
+    <!-- End of Reference Window -->
+
+    <!-- Examples Window -->
+    <div class="examples-window window" id="examples-window">
+      <div class="close-btn-container">
+        <div class="close-btn close-examples-window" id="close-examples-window">
+          <i class="fas fa-times close-btn-icon"></i>
+        </div>
+      </div>
+      <div class="examples-window-lists-container window-lists-container">
+        <!-- HTML and CSS Examples-->
+        <article class="htmlCssExamples window-list-container">
+          <h1>HTML and CSS</h1>
+          <ul class="window-list">
+            <li class="window-list-items">HTML Examples</li>
+            <li class="window-list-items">CSS Examples</li>
+            <li class="window-list-items">W3.CSS Examples</li>
+            <li class="window-list-items">Bootstrap Examples</li>
+            <li class="window-list-items">How To Examples</li>
+            <li class="window-list-items">SVG Examples</li>
+            <li class="window-list-items">Web Templates Examples</li>
+          </ul>
+        </article>
+        <!-- End of HTML and CSS  Examples-->
+
+        <!-- Javascript Examples -->
+        <article class="javaScriptExamples window-list-container">
+          <h1>JavaScript</h1>
+          <ul class="window-list">
+            <li class="window-list-items">JavaScript Examples</li>
+            <li class="window-list-items">HTML DOM Examples</li>
+            <li class="window-list-items">jQuery Examples</li>
+            <li class="window-list-items">AJAX Examples</li>
+            <li class="window-list-items">Angular.JS Examples</li>
+            <li class="window-list-items">W3.JS Examples</li>
+          </ul>
+        </article>
+
+        <!-- End of Javascript Examples -->
+        <!-- Programming Examples -->
+        <article class="programmingExamples window-list-container">
+          <h1>Programming</h1>
+          <ul class="window-list">
+            <li class="window-list-items">Python Examples</li>
+            <li class="window-list-items">Java Examples</li>
+            <li class="window-list-items">C++ Examples</li>
+            <li class="window-list-items">C# Examples</li>
+          </ul>
+        </article>
+
+        <!-- End of Programming Examples -->
+
+        <!-- Server Side Examples -->
+        <article class="serverSideExamlpes window-list-container">
+          <h1>Server Side</h1>
+          <ul class="window-list">
+            <li class="window-list-items">SQL Examples</li>
+            <li class="window-list-items">PHP Examples</li>
+            <li class="window-list-items">ASP Examples</li>
+          </ul>
+        </article>
+
+        <!-- End of Server Side Examples -->
+
+        <!-- XML Examples -->
+        <article class="xmlExamples window-list-container">
+          <h1>XML</h1>
+          <ul class="window-list">
+            <li class="window-list-items">XML Examples</li>
+            <li class="window-list-items">XSLT Examples</li>
+            <li class="window-list-items">XPath Examples</li>
+            <li class="window-list-items">XML Schema Examples</li>
+            <li class="window-list-items">AJAX Examples</li>
+            <li class="window-list-items">SVG Examples</li>
+          </ul>
+        </article>
+
+        <!-- End of XML Examples -->
+
+        <!-- Quizzes -->
+
+        <article class="quizzes window-list-container">
+          <h1>Quizzes</h1>
+          <ul class="window-list">
+            <li class="window-list-items">HTML Quizzes</li>
+            <li class="window-list-items">CSS Quizzes</li>
+            <li class="window-list-items">JavaScript Quizzes</li>
+            <li class="window-list-items">PHP Quizzes</li>
+            <li class="window-list-items">SQL Quizzes</li>
+            <li class="window-list-items">Python Quizzes</li>
+            <li class="window-list-items">jQuery Quizzes</li>
+            <li class="window-list-items">Bootstrap Quizzes</li>
+            <li class="window-list-items">Java Quizzes</li>
+            <li class="window-list-items">C++ Quizzes</li>
+            <li class="window-list-items">C# Quizzes</li>
+            <li class="window-list-items">XML Quizzes</li>
+          </ul>
+        </article>
+        <!-- End of Quizzes -->
+      </div>
+    </div>
+
+    <!-- End of Examples Window -->
+
+    <!-- Exercises Window -->
+    <div class="window exercises-window" id="exercises-window">
+      <div class="close-btn-container">
+        <div
+          class="close-btn close-exercises-window"
+          id="close-exercises-window"
+        >
+          <i class="fas fa-times close-btn-icon"></i>
+        </div>
+      </div>
+      <div class="window-lists-container exercises-window-lists-container">
+        <!-- Exercise List -->
+        <article class="exerciseList window-list-container">
+          <h1>Exercises</h1>
+          <ul class="window-list">
+            <li class="window-list-items">HTML Exercises</li>
+            <li class="window-list-items">CSS Exercises</li>
+            <li class="window-list-items">JavaScript Exercises</li>
+            <li class="window-list-items">PHP Exercises</li>
+            <li class="window-list-items">SQL Exercises</li>
+            <li class="window-list-items">Python Exercises</li>
+            <li class="window-list-items">jQuery Exercises</li>
+            <li class="window-list-items">Java Exercises</li>
+            <li class="window-list-items">Bootstrap Exercises</li>
+            <li class="window-list-items">C++ Exercises</li>
+            <li class="window-list-items">C# Exercises</li>
+          </ul>
+        </article>
+
+        <!-- End of Exercise List -->
+
+        <!-- Quizzes List -->
+        <article
+          class="quizzes-example window-list-container"
+          id="window-list-container"
+        >
+          <h1>Quizzes</h1>
+          <ul class="window-list">
+            <li class="window-list-items">HTML Quizzes</li>
+            <li class="window-list-items">CSS Quizzes</li>
+            <li class="window-list-items">JavaScript Quizzes</li>
+            <li class="window-list-items">PHP Quizzes</li>
+            <li class="window-list-items">SQL Quizzes</li>
+            <li class="window-list-items">Python Quizzes</li>
+            <li class="window-list-items">jQuery Quizzes</li>
+            <li class="window-list-items">Bootstrap Quizzes</li>
+            <li class="window-list-items">Java Quizzes</li>
+            <li class="window-list-items">C++ Quizzes</li>
+            <li class="window-list-items">C# Quizzes</li>
+            <li class="window-list-items">XML Quizzes</li>
+          </ul>
+        </article>
+
+        <!-- End of Quizzes List -->
+
+        <!-- Certificates List -->
+        <article class="window-list-container certificate-list">
+          <h1>Certificates</h1>
+          <ul class="window-list">
+            <li class="window-list-items">HTML Certificate</li>
+            <li class="window-list-items">CSS Certificate</li>
+            <li class="window-list-items">JavaScript Certificate</li>
+            <li class="window-list-items">Python Certificate</li>
+            <li class="window-list-items">PHP Certificate</li>
+            <li class="window-list-items">Bootstrap Certificate</li>
+            <li class="window-list-items">Java Certificate</li>
+            <li class="window-list-items">jQuery Certificate</li>
+            <li class="window-list-items">SQL Certificate</li>
+          </ul>
+        </article>
+
+        <!-- End of Certificates List -->
+      </div>
+    </div>
+
+    <!-- End of Exercises Window -->
+
+    <!-- Body  -->
+    <div class="container">
+      <!-- sidebar  -->
+
+      <aside class="sidebar">
+        <!-- Sidebar content -->
+        <div class="sidebar-content">
+          <!-- HTML CSS LIST -->
+          <h4>HTML and CSS</h4>
+          <ul class="sidebar-list html-list">
+            <li class="sidebar-list-items">Learn HTML</li>
+            <li class="sidebar-list-items">Learn CSS</li>
+            <li class="sidebar-list-items">Learn Bootstrap</li>
+            <li class="sidebar-list-items">Learn W3.CSS</li>
+            <li class="sidebar-list-items">Learn Colors</li>
+            <li class="sidebar-list-items">Learn Icons</li>
+            <li class="sidebar-list-items">Learn Graphics</li>
+            <li class="sidebar-list-items">Learn How To</li>
+            <li class="sidebar-list-items">Learn Sass</li>
+          </ul>
+
+          <!-- End of HTML CSS LIST -->
+
+          <!-- Javascript List -->
+          <h4>JavaScript</h4>
+          <ul class="sidebar-list javascript-list">
+            <li class="sidebar-list-items">Learn Javascript</li>
+            <li class="sidebar-list-items">Learn jQuery</li>
+            <li class="sidebar-list-items">Learn React</li>
+            <li class="sidebar-list-items">Learn AngularJS</li>
+            <li class="sidebar-list-items">Learn JSON</li>
+            <li class="sidebar-list-items">Learn AJAX</li>
+            <li class="sidebar-list-items">Learn AppML</li>
+            <li class="sidebar-list-items">Learn W3.JS</li>
+          </ul>
+          <!-- End of Javascript List -->
+
+          <!-- Server Side List -->
+          <h4>Server Side</h4>
+          <ul class="sidebar-list server-side-list">
+            <li class="sidebar-list-items">Learn SQL</li>
+            <li class="sidebar-list-items">Learn PHP</li>
+            <li class="sidebar-list-items">Learn ASP</li>
+            <li class="sidebar-list-items">Learn Node.js</li>
+            <li class="sidebar-list-items">Learn Raspberry Pi</li>
+          </ul>
+          <!-- End of Server Side List -->
+
+          <!-- Programming List -->
+          <h4>Programming</h4>
+          <ul class="sidebar-list programming-list">
+            <li class="sidebar-list-items">Learn Python</li>
+            <li class="sidebar-list-items">Learn Java</li>
+            <li class="sidebar-list-items">Learn C++</li>
+            <li class="sidebar-list-items">Learn C#</li>
+            <li class="sidebar-list-items">Learn Machine Learning</li>
+          </ul>
+          <!-- End of Programming List -->
+
+          <!-- Web Building List -->
+          <h4>Web Building</h4>
+          <ul class="sidebar-list web-building-list">
+            <li class="sidebar-list-items">Web Templates</li>
+            <li class="sidebar-list-items">Web Statistics</li>
+            <li class="sidebar-list-items">Web Certificates</li>
+            <li class="sidebar-list-items">Web Editor</li>
+            <li class="sidebar-list-items">Web Development</li>
+            <li class="sidebar-list-items">Test Your Typing Speed</li>
+          </ul>
+          <!-- End of Web Building List -->
+
+          <!-- XML Tutorials List -->
+          <h4>XML Tutorials</h4>
+          <ul class="sidebar-list xml-tutorial-list">
+            <li class="sidebar-list-items">Learn XML</li>
+            <li class="sidebar-list-items">Learn XML AJAX</li>
+            <li class="sidebar-list-items">Learn XML DOM</li>
+            <li class="sidebar-list-items">Learn XML DTD</li>
+            <li class="sidebar-list-items">Learn XML Schema</li>
+            <li class="sidebar-list-items">Learn XSLT</li>
+            <li class="sidebar-list-items">Learn XPath</li>
+            <li class="sidebar-list-items">Learn XQuery</li>
+          </ul>
+          <!-- End of XML Tutorials List -->
+
+          <!-- References List -->
+          <h4>References</h4>
+          <ul class="sidebar-list reference-list">
+            <li class="sidebar-list-items">HTML Reference</li>
+            <li class="sidebar-list-items">CSS Reference</li>
+            <li class="sidebar-list-items">JS Reference</li>
+            <li class="sidebar-list-items">SQL Reference</li>
+            <li class="sidebar-list-items">PHP Reference</li>
+            <li class="sidebar-list-items">jQuery Reference</li>
+            <li class="sidebar-list-items">Python Reference</li>
+            <li class="sidebar-list-items">Bootstrap 3 Reference</li>
+            <li class="sidebar-list-items">Bootstrap 4 Reference</li>
+            <li class="sidebar-list-items">W3.CSS Reference</li>
+            <li class="sidebar-list-items">Java Reference</li>
+            <li class="sidebar-list-items">Angular Reference</li>
+            <li class="sidebar-list-items">Sass Reference</li>
+            <li class="sidebar-list-items">UTF-8 Reference</li>
+          </ul>
+          <!-- End of References List -->
+
+          <!-- Exercises List -->
+          <h4>Exercises</h4>
+          <ul class="sidebar-list exercises-list">
+            <li class="sidebar-list-items">HTML Exercises</li>
+            <li class="sidebar-list-items">CSS Exercises</li>
+            <li class="sidebar-list-items">JavaScript Exercises</li>
+            <li class="sidebar-list-items">SQL Exercises</li>
+            <li class="sidebar-list-items">PHP Exercises</li>
+            <li class="sidebar-list-items">Python Exercises</li>
+            <li class="sidebar-list-items">Java Exercises</li>
+            <li class="sidebar-list-items">C++ Exercises</li>
+            <li class="sidebar-list-items">C# Exercises</li>
+            <li class="sidebar-list-items">Bootstrap Exercises</li>
+          </ul>
+          <!-- End of Exercises List -->
+        </div>
+        <!-- End of sidebar content -->
+      </aside>
+
+      <!-- end of sidebar  -->
+
+      <!-- main-content -->
+      <section class="main-content">
+        <!-- HTML section -->
+        <div class="html-section language-section">
+          <!-- About section -->
+          <article class="about-section">
+            <h1>HTML</h1>
+            <p>The language for building web pages</p>
+            <div class="learn-btn-container">
+              <button class="learn-btn">learn html</button>
+              <button class="learn-btn">html references</button>
+            </div>
+          </article>
+          <!-- End of About section -->
+
+          <!-- Code Section -->
+          <article class="code-section">
+            <h3>HTML Example:</h3>
+            <p class="code-box">
+              <span class="tagstart"><</span
+              ><span class="html-tag">! DOCTYPE </span
+              ><span class="docHtml">html</span><span class="tagstart">></span>
+              <br />
+              <span class="tagstart"><</span><span class="html-tag">html</span
+              ><span class="tagstart">></span>
+              <br />
+              <span class="tagstart"><</span><span class="html-tag">title</span
+              ><span class="tagstart">></span>
+              <br />
+              <span class="tagstart"><</span><span class="html-tag">body</span
+              ><span class="tagstart">></span>
+              <br />
+              <span class="tagstart"><</span><span class="html-tag">h1</span
+              ><span class="tagstart">></span>This is a heading
+              <span class="tagstart"><</span><span class="html-tag">/h1</span
+              ><span class="tagstart">></span>
+              <br />
+              <span class="tagstart"><</span><span class="html-tag">p</span
+              ><span class="tagstart">></span>This is a paragraph.
+              <span class="tagstart"><</span><span class="html-tag">/p</span
+              ><span class="tagstart">></span> <br /><br />
+              <span class="tagstart"><</span><span class="html-tag">/body</span
+              ><span class="tagstart">></span>
+              <br />
+              <span class="tagstart"><</span><span class="html-tag">/html</span
+              ><span class="tagstart">></span>
+            </p>
+            <div class="tryItYourself-container">
+              <button class="tryItYourself">
+                Try it Yourself
+                <span
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                ></span>
+              </button>
+            </div>
+          </article>
+          <!-- End of Code Section -->
+        </div>
+        <!-- End of HTML section -->
+
+        <!-- CSS Section -->
+        <div class="language-section css-section">
+          <!-- About Section -->
+          <article class="about-section">
+            <h1>CSS</h1>
+            <p>The language for styling web pages</p>
+            <div class="learn-btn-container">
+              <button class="learn-btn">learn css</button>
+              <button class="learn-btn">css references</button>
+            </div>
+          </article>
+          <!-- End of About Section -->
+
+          <!-- Code Section -->
+          <article class="code-section">
+            <h3>CSS Example:</h3>
+            <p class="code-box">
+              <span class="html-tag">body</span> {
+              <br />
+              <span class="css-property-name"
+                >&nbsp;&nbsp;&nbsp;background-color</span
+              >: <span class="css-property-value">lightblue</span>;
+              <br />
+              }
+              <br /><br />
+              <span class="html-tag">h1</span> {
+              <br />
+              <span class="css-property-name">&nbsp;&nbsp;&nbsp;color</span>:
+              <span class="css-property-value">white</span>;
+              <br />
+              <span class="css-property-name">&nbsp;&nbsp;&nbsp;text-align</span
+              >: <span class="css-property-value">center</span>;
+              <br />
+              }
+              <br /><br />
+              <span class="html-tag">p</span> {
+              <br />
+              <span class="css-property-name"
+                >&nbsp;&nbsp;&nbsp;font-family</span
+              >: <span class="css-property-value">verdana</span>;
+              <br />
+              <span class="css-property-name">&nbsp;&nbsp;&nbsp;font-size</span
+              >: <span class="css-property-value">20px</span>;
+              <br />
+              }
+            </p>
+            <div class="tryItYourself-container">
+              <button class="tryItYourself">
+                Try it Yourself
+                <span
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                ></span>
+              </button>
+            </div>
+          </article>
+          <!-- End of Code Section -->
+        </div>
+        <!-- End of CSS Section -->
+
+        <!-- Javascript Section -->
+        <div class="js-section language-section">
+          <!-- About section -->
+          <article class="about-section">
+            <h1>JavaScript</h1>
+            <p>The language for programming web pages</p>
+            <div class="learn-btn-container">
+              <button class="learn-btn">learn javascript</button>
+              <button class="learn-btn">javascript references</button>
+            </div>
+          </article>
+          <!-- End of About section -->
+
+          <!-- Code Section -->
+          <article class="code-section">
+            <h3>JavaScript Example:</h3>
+            <p class="code-box">
+              <span class="tagstart"><</span
+              ><span class="html-tag">button</span>
+              <span class="docHtml">onclick</span
+              ><span class="tagstart">= "myFunction( )"></span>Click Me!
+              <span class="tagstart"><</span
+              ><span class="html-tag">/button</span
+              ><span class="tagstart">></span> <br /><br /><br />
+              <span class="tagstart"><</span><span class="html-tag">script</span
+              ><span class="tagstart">></span>
+              <br />
+              <span class="tagstart">function</span> myFunction( ) {
+              <br />
+              &nbsp; &nbsp; &nbsp;<span class="tagstart">var </span>x =
+              document.getElementById( <span class="html-tag">"demo"</span> ) ;
+              <br />
+              &nbsp; &nbsp; &nbsp;x.style.fontSize =
+              <span class="html-tag">"25px"</span> ;
+              <br />
+              &nbsp; &nbsp; &nbsp;x.style.color =
+              <span class="html-tag">"red"</span> ;
+              <br />
+              }
+              <br />
+              <span class="tag-start"><</span
+              ><span class="html-tag">/script</span
+              ><span class="tagstart">></span>
+            </p>
+            <div class="tryItYourself-container">
+              <button class="tryItYourself">
+                Try it Yourself
+                <span
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                ></span>
+              </button>
+            </div>
+          </article>
+          <!-- End of Code Section -->
+        </div>
+        <!-- End of Javascript Section -->
+
+        <!-- SQL Section -->
+        <div class="sql-section language-section">
+          <!-- About section -->
+          <article class="about-section">
+            <h1>SQL</h1>
+            <p>The language for accessing databases</p>
+            <div class="learn-btn-container">
+              <button class="learn-btn">learn sql</button>
+              <button class="learn-btn">sql references</button>
+            </div>
+          </article>
+          <!-- End of About section -->
+
+          <!-- Code Section -->
+          <article class="code-section">
+            <h3>SQL Example:</h3>
+            <p class="code-box">
+              <span class="blue">SELECT</span> *
+              <span class="blue">FROM</span> Customers
+              <br />
+              <span class="blue">WHERE</span> Country=
+              <span class="brown">'Mexico'</span> ; <br /><br /><br />
+            </p>
+            <div class="tryItYourself-container">
+              <button class="tryItYourself">
+                Try it Yourself
+                <span
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                ></span>
+              </button>
+            </div>
+          </article>
+          <!-- End of Code Section -->
+        </div>
+
+        <!-- End of SQL Section -->
+
+        <!-- Learn boxes- Python,PHP,jQuery,Java -->
+        <div class="learn-boxes">
+          <!-- single learn box -->
+          <article class="learn-box">
+            <h2>Python</h2>
+            <p>A programming language</p>
+
+            <button class="learn-btn">learn python</button>
+          </article>
+          <!-- End of single learn box -->
+          <!-- single learn box -->
+          <article class="learn-box">
+            <h2>PHP</h2>
+            <p>A web-server programming language</p>
+
+            <button class="learn-btn">learn PHP</button>
+          </article>
+          <!-- End of single learn box -->
+          <!-- single learn box -->
+          <article class="learn-box">
+            <h2>jQuery</h2>
+            <p>A Javascript library for developing web pages</p>
+
+            <button class="learn-btn">learn jQuery</button>
+          </article>
+          <!-- End of single learn box -->
+          <!-- single learn box -->
+          <article class="learn-box">
+            <h2>Java</h2>
+            <p>A programming language</p>
+
+            <button class="learn-btn">learn Java</button>
+          </article>
+          <!-- End of single learn box -->
+        </div>
+        <!-- End of Learn boxes -->
+
+        <!-- library section -->
+        <div class="library-section">
+          <!-- w3css section -->
+          <article class="w3css">
+            <h1>w3.css</h1>
+            <p>
+              A modern CSS framework for faster and better responsive web pages
+            </p>
+            <button class="learn-btn">Learn w3.css</button>
+          </article>
+          <!-- End of w3css section -->
+
+          <!-- Color picker section -->
+          <article class="color-picker">
+            <h1>color picker</h1>
+            <div class="color-picker-image-container">
+              <img
+                src="./images/colorpicker.png"
+                alt=""
+                class="color-picker-image img"
+              />
+            </div>
+          </article>
+          <!-- End of color picker section -->
+
+          <!-- bootstrap section -->
+          <article class="bootstrap">
+            <h1>Bootstrap</h1>
+            <p>A CSS framework for faster and better responsive web pages</p>
+            <div class="learn-btn-container">
+              <button class="learn-btn">Learn bootstrap3</button>
+              <button class="learn-btn">Learn bootstrap4</button>
+            </div>
+          </article>
+          <!-- End of bootstrap section -->
+        </div>
+
+        <!--End of  library section -->
+
+        <!-- Exercises Section -->
+        <div class="exercises-section">
+          <h1>Exercises</h1>
+          <p>Test yourself with exercises</p>
+          <!-- Exercises button container -->
+          <div class="exercises-btn-container">
+            <button class="tryItYourself html-exercise">HTML Exercises</button>
+            <button class="tryItYourself css-exercise">CSS Exercises</button>
+            <button class="tryItYourself js-exercise">
+              JavaScript Exercises
+            </button>
+            <button class="tryItYourself sql-exercise">
+              SQL <span>Exercises</span>
+            </button>
+            <button class="tryItYourself python-exercise">
+              Python <span>Exercises</span>
+            </button>
+            <button class="tryItYourself php">PHP</button>
+            <button class="tryItYourself java">Java</button>
+            <button class="tryItYourself jQuery">jQuery</button>
+            <button class="tryItYourself cplus">C++</button>
+            <button class="tryItYourself csharp">C#</button>
+          </div>
+        </div>
+        <!-- End of Exercises Section -->
+
+        <!-- Templates Section -->
+        <div class="template-section">
+          <h1>Web Templates</h1>
+
+          <p>Browse our selected of <b>free</b> responsive HTML Templates</p>
+          <div class="template-img-container">
+            <img
+              src="./images/web-templates.jpg"
+              alt="Templates"
+              class="template-img"
+            />
+          </div>
+          <button class="learn-btn">browse templates</button>
+        </div>
+        <!-- End of Templates Section -->
+
+        <!-- How to section -->
+        <div class="how-to-section">
+          <h1>how to section</h1>
+          <p>Code snippets for HTML, CSS and JavaScript</p>
+          <button class="learn-btn">learn how to</button>
+        </div>
+        <!-- End of How to section -->
+
+        <!-- Certificate Section -->
+        <div class="certificate-section-container">
+          <div class="certificate-section">
+            <div class="certificate-heading-container">
+              <h1>Web Certificates</h1>
+              <h6>Get Certified in HTML, CSS, and JavaScript</h6>
+            </div>
+
+            <div class="certificate-btn-container">
+              <button class="tryItYourself">
+                Get Certified
+                <span
+                  ><i class="fa fa-angle-double-right" aria-hidden="true"></i
+                ></span>
+              </button>
+            </div>
+            <div class="space-filler"></div>
+          </div>
+        </div>
+        <!-- End of certificate section -->
+
+        <!-- footer -->
+        <footer class="footer">
+          <div class="btn-forum">
+            <div class="footer-btn-container">
+              <button class="footer-btn">certificates</button>
+              <button class="footer-btn">quizzes</button>
+              <button class="footer-btn">exercises</button>
+            </div>
+            <p class="forum-about">
+              <span class="hover-green">forum </span>|
+              <span class="hover-green">about</span>
+            </p>
+          </div>
+
+          <p class="footer-content">
+            W3Schools is optimized for learning, testing, and training. Examples
+            might be simplified to improve reading and basic understanding.
+            Tutorials, references, and examples are constantly reviewed to avoid
+            errors, but we cannot warrant full correctness of all content. While
+            using this site, you agree to have read and accepted our terms of
+            use, cookie and privacy policy. Copyright 1999-2020 by Refsnes Data.
+            All Rights Reserved.
+          </p>
+          <i class="fas fa-thumbs-up like"></i>
+          <button class="tryItYourself">w3schools shop</button>
+        </footer>
+
+        <!-- End of footer -->
+      </section>
+
+      <!-- End of main-content -->
+    </div>
+    <!-- end of body  -->
+
+    <!-- js  -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
