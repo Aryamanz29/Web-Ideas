@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      /* Reset Css */
+      margin: 0px;
+      padding: 0px;
+    }
+    .navbar {
+      /* background-color:yellow; */
+      position: relative;
+      height: 44px;
+    }
+    .navbar1 {
+      position: relative;
+      left: 4px;
+      display: flex;
+
+      padding: 8px 10px;
+      margin: 0px;
+    }
+    
+    .navbar1 {
+      direction: flex;
+
+      color: red;
+      list-style: none;
+    }
+    .navbar1 li a {
+      padding: 0px 24px;
+      position: relative;
+      font-family: "Baloo Bhai 2", cursive;
+      font-weight: bold;
+      
+      left: 23px;
+      display: flex;
+      color: white
+    }
+    .navbar::before {
+      content: "";
+      background-color: black;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 1.8;
+    }
+    .navbar1 li a:hover {
+      color: hotpink;
+      background-color: lightyellow;
+      border-radius: 15px;
+      text-decoration: underline;
+    }
+    #home {
+      display: flex;
+      flex-direction: column;
+      padding: 3px 200px;
+      height: 578px;
+      justify-content: center;
+      align-items: center;
+      font-family: "Bree Serif", serif;
+    }
+    #home::before {
+      content: "";
+      position: absolute;
+      background: url("./img/christmas-791110_1280.webp") no-repeat center
+        center/cover;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      height: 642px;
+      z-index: -1;
+      opacity: 0.7;
+    }
+    #home h1 {
+      color: rgb(0, 0, 0);
+      text-align: center;
+      font-family: "Bree Serif", serif;
+    }
+    #home p {
+      color: rgb(0, 0, 0);
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: bold;
+      font-family: "Bree Serif", serif;
+    }
+
+    /*services */
+    #services {
+      margin: 34px;
+      display: flex;
+    }
+    #services .box {
+      border: 3px solid green;
+      padding: 34px;
+      margin: 3px 6px;
+      background-color: rgb(231, 224, 224);
+      border-radius: 23px;
+      font-family: "Bree Serif", serif;
+    }
+    #services .box img {
+      height: 100px;
+      display: block;
+      margin: auto;
+    }
+    /* client section */
+    #client-section {
+      position: relative;
+    }
+    #client-section::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("./img/client.jpg");
+      z-index: -1;
+      opacity: 0.4;
+    }
+    #clients {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .client-item {
+      padding: 34px;
+    }
+
+    #clients img {
+      height: 124px;
+    }
+
+    /* Contact Section */
+    #contact {
+      position: relative;
+    }
+    #contact::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.7;
+      background: url("./img/spaghetti-1932466_1280.jpg") no-repeat center
+        center/cover;
+    }
+    #contact-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 34px;
+      font-family: "Bree Serif", serif;
+    }
+    #contact-box input,
+    #contact-box textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 9px;
+      font-size: 1.1rem;
+      font-family: "Bree Serif", serif;
+    }
+
+    #contact-box form {
+      width: 40%;
+    }
+
+    #contact-box label {
+      font-size: 1.3rem;
+      font-weight: bold;
+      font-family: "Bree Serif", serif;
+    }
+    footer {
+      background-color: black;
+      padding: 8px 34px;
+      color: white;
+      text-align: center;
+    }
+
+    /* utility class */
+    .h-primary {
+      font-size: 2.8rem;
+      margin: 33px;
+      padding: 1px;
+      background-color:#eaa5a5b8;;
+      font-family: "Bree Serif", serif;
+      text-align: center;
+    }
+    .center {
+      text-align: center;
+      font-family: "Bree Serif", serif;
+    }
+    .h-secondary {
+      font-size: 2.4rem;
+      padding: 12px;
+      font-family: "Bree Serif", serif;
+    }
+    .btn {
+      padding: 6px 20px;
+      border: 2px solid white;
+      background-color: brown;
+      color: white;
+      margin: 17px;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .btn-center {
+      padding: 6px 64px;
+      border: 2px solid white;
+      background-color: brown;
+      color: white;
+      margin: 17px;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="navbar">
+      <ul class="navbar1">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Food Menu</a></li>
+      </ul>
+    </div>
+    <section id="home">
+      <h1 class="h-primary">Welcome to Sparsh's OnlineMeal</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+        dolorum numquam minus.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+      <h1 class="h-primary center">Our Services</h1>
+      <div id="services">
+        <div class="box">
+          <img src="./img/pizza-3007395_1280.webp" alt="" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+            quidem optio illum labore amet est.
+          </p>
+        </div>
+        <div class="box">
+          <img src="./img/2.png" alt="" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+            quidem optio illum labore amet est.
+          </p>
+        </div>
+        <div class="box">
+          <img src="./img/3.png" alt="" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+            quidem optio illum labore amet est.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="client-section">
+      <h1 class="h-primary">Our Clients</h1>
+      <div id="clients">
+        <div class="client-item">
+          <img src="img/logo1.png" alt="Our Client" />
+        </div>
+        <div class="client-item">
+          <img src="img/logo2.png" alt="Our Client" />
+        </div>
+
+        <div class="client-item">
+          <img src="img/logo3.png" alt="Our Client" />
+        </div>
+        <div class="client-item">
+          <img src="img/logo4.png" alt="Our Client" />
+        </div>
+      </div>
+    </section>
+    <h1 class="h-primary center">Contact us</h1>
+    <section id="contact">
+      <div id="contact-box">
+        <form action="no action.php">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Email</label>
+            <input
+              type="Email"
+              id="name"
+              name="name"
+              placeholder="Enter Your Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Phone</label>
+            <input
+              type="number"
+              id="name"
+              name="name"
+              placeholder="Enter Your Phone Number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button class="btn-center">Submit Feedback</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="form2 center h-primary">
+      <label for="name">Class</label>
+      <input type="text"
+      placeholder="#n">
+
+    </div>
+
+    <footer>
+      <div class="center">
+        Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+      </div>
+    </footer>
+  </body>
+</html>
