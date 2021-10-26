@@ -16,5 +16,3 @@ Here are some Screen shots of the output you will get after running this amazing
 <img width="947" alt="s6" src="https://user-images.githubusercontent.com/78205434/138927366-e03e8128-2f66-4d98-94e4-605aadee40b4.png">
 <img width="948" alt="S7" src="https://user-images.githubusercontent.com/78205434/138927369-46ebb99d-19ab-454d-a954-f51af507c96f.png">
 
-
-Thank you
