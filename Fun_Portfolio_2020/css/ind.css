@@ -1,0 +1,143 @@
+
+.img1{
+    /*width: 1350px;;
+    height:750px;*/
+    width: 100%;
+    height: 100%;
+  /*background-image: url('img_flowers.jpg');*/
+    background-size: 100% 100%;
+}
+.hi-hello{
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    left: 30px;
+    top: 200px;
+
+}
+
+#intro{
+    background-color:#ef4f4f;
+    padding-bottom: 5%;
+}
+h3{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    padding: 4%;
+    padding-bottom: 0%;
+}
+
+.gif{
+    /*width: 90%;
+    height: 90%;
+    background-size: 80% 80%;*/
+    
+    padding: 10%;
+}
+
+
+
+#isup{
+    
+    background-color:#ffba93;
+    
+    
+}
+
+#isup2{
+    
+    background-color::#ff4c68;
+    padding: 3%;
+    padding-bottom: 0%;
+}
+#isup3{
+    
+    background-color:#ffb26b;
+    padding: 3%;
+    padding-bottom: 0%;
+}
+
+h5{
+    font-weight: bolder;
+    font-size: 1 rem;
+    color: gold;
+}
+
+.carousel{
+    padding: 4%;
+    background-color:#ffba93;
+}
+.carousel-inner > .carousel-item > img{
+    width: 900px;
+    height: 600px;
+    object-fit:cover;
+}
+
+#music{
+    text-align: center;
+    background-color:#ff4c68;
+}
+
+.card{
+    border: none;
+    background-color: #ff4c68;
+}
+
+#iii{
+    cursor: pointer;
+}
+
+#iii2{
+    cursor: pointer;
+}
+#iii3{
+    cursor: pointer;
+}
+
+#pricing{
+    padding: 120px;
+    text-align: center;
+}
+
+.pricecol{
+    padding: 3% 2%;
+}
+
+#fifapes{
+    text-align: center;
+    background-color:#ffb26b;
+}
+
+#vgames{
+    text-align: right;
+    margin-right: 3%;
+}
+/*.col{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}*/
+
+
+
+/*Footer and totop*/
+
+#footer{
+    padding: 7% 15% 0%;
+    text-align: center;
+    
+}
+
+.ficons{
+    margin: 2%;
+}
+
+.totop{
+    padding: 0 3% 1% ;
+    
+    
+    
+}

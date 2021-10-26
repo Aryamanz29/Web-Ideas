@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1f652a;
+}
+.myNav{
+    background-color: #0e1102;
+    text-align: center;
+}
+.logo{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #d6ce15;
+    font-size: 45px;
+    cursor: pointer;
+    padding: 10px;
+}
+.logo:hover{
+    color: #a4a71e;
+}
+
+.page1 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.contentselect{
+    width: 700px;
+    margin: auto;
+    margin-top: -10px;
+}
+.bsize{
+    color:white;
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.btnpr {
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: yellow;
+    border-width: 3px;
+    color: yellow;
+    user-select: none;
+    outline: none;
+    font-size: 15px;
+}
+.btnproceed{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.toptext{
+    color:white;
+    text-align: center;
+    margin-top: -14px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.btn{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    outline: none;
+    color: white;
+    background-color: #cfd16d;
+    user-select: none;
+    border-radius: 8px;
+    border-color: gray;
+    border-width: 2px;
+    background-image: url('images/1.png');
+    }
+.btn:hover{
+    cursor: pointer;
+}
+.btncontent{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    width: 590px;
+    margin: auto;
+}
+.pagecommon {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.btnpg2{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    width: 390px;
+    margin: auto;
+    margin-top: 40px;
+}
+.btnpr2{
+    margin-top: 20px;
+}
+.btnproceed2{
+    margin-bottom: 0px;
+}
+.btncheck{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        outline: none;
+        color: white;
+        background-color: #cfd16d;
+        user-select: none;
+        border-radius: 8px;
+        border-color: gray;
+        border-width: 2px;
+}
+.btnpr{
+    cursor: pointer;
+}
+.bsize2{
+    font-size: 55px;
+}
+.btnpga{
+    grid-template-columns: repeat(1,1fr);
+}
+.ansbtn{
+    width: 100px;
+    height: 100px;
+    outline: none;
+    color: white;
+    background-color: #cfd16d;
+    user-select: none;
+    border-radius: 8px;
+    border-color: gray;
+    border-width: 2px;
+    background-image: url('images/detective.png');
+}
+.toptext2{
+    font-size: 35px;
+}
