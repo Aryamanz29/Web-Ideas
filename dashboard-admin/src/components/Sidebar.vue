@@ -1,6 +1,8 @@
 <template>
   <v-navigation-drawer v-model="showSidebar" :clipped="$vuetify.breakpoint.lgAndUp" app elevation="0">
+    <!-- MENU -->
     <v-list shaped>
+      <!-- SHOW SIDEBAR IN MOBILE -->
       <div v-if="$vuetify.breakpoint.md">
         <v-subheader>SEARCH</v-subheader>
         <v-text-field
@@ -17,6 +19,7 @@
         <v-divider class="mb-6 mx-4" />
       </div>
 
+      <!-- LOAD MENU ITEMS -->
       <v-list-item v-for="item in items" :key="item.title" :to="item.to" active-class="yellow lighten-2 brown--text text--darken-3">
         <v-list-item-icon>
           <v-icon>{{ item.icon }}</v-icon>

@@ -1,8 +1,11 @@
 <template>
   <v-app>
     <v-main>
+      <!-- @showSidebar receive the emit of same name of Navbar -->
       <Navbar @showSidebar="showSidebar = !showSidebar" />
+      <!-- @showSidebar receive the emit of same name of Sidebar -->
       <Sidebar :show="showSidebar" @showSidebar="showSidebar = !showSidebar" />
+      <!-- PAGE CONTENT -->
       <router-view />
     </v-main>
   </v-app>
@@ -22,6 +25,7 @@ export default {
     sidebar: true
   }),
   computed: {
+    /* Computed prop to autodetect changes and do not show warn in Vue */
     showSidebar: {
       get() {
         return this.sidebar;

@@ -3,10 +3,12 @@
     
     <v-icon v-text="'mdi-lightning-bolt'" color="yellow lighten-2" class="mr-6" @click="$emit('showSidebar')" />
 
+    <!-- APP NAME -->
     <v-app-bar-title class="font-weight-medium">Social</v-app-bar-title>
 
     <v-spacer></v-spacer>
 
+    <!-- HIDE SEARCHBAR IN MOBILE -->
     <v-row width="200" class="d-flex justify-center ma-0 mr-4" v-if="$vuetify.breakpoint.mdAndUp">
       <v-col cols="6" class="pa-0 ma-0">
         <v-text-field
@@ -25,6 +27,7 @@
 
     <v-spacer></v-spacer>
 
+    <!-- MESSAGES -->
     <v-menu offset-y class="mx-1 mr-2" :close-on-content-click="false">
       <template v-slot:activator="{ on, attrs }">
         <v-icon v-text="'mdi-message'" v-bind="attrs" v-on="on" class="pa-1" />
@@ -60,6 +63,7 @@
       </v-list>
     </v-menu>
 
+    <!-- NIGHTMODE/LIGHTMODE -->
     <div class="ml-5 mr-2 mt-5">
       <v-switch v-model="nightMode" inset>
         <template v-slot:label>
@@ -73,6 +77,7 @@
       </v-switch>
     </div>
 
+    <!-- USER CUSTOM MENU -->
     <v-menu offset-y class="mx-4">
       <template v-slot:activator="{ on, attrs }">
         <v-list-item-avatar style="cursor:pointer" v-bind="attrs" v-on="on">

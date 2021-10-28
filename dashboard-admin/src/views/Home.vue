@@ -1,9 +1,12 @@
 <template>
+  <!-- THIS IS THE MAIN PAGE -->
   <v-app>
     <v-container>
+      <!-- THIS IS THE GRAPHIC ROW -->
       <v-row class="pa-6 d-flex flex-wrap justify-space-between">
         <v-col cols="12" sm="12" lg="8">
           <v-row>
+            <!-- CARD: GRAPHIC ACTIVITY LAST WEEK -->
             <v-col>
               <v-card class="pb-3 px-6" outlined>
                 <v-card-title class="text-button"
@@ -25,6 +28,7 @@
                 ></v-sparkline>
               </v-card>
             </v-col>
+            <!-- CARD: GRAPHIC ACTIVITY THIS WEEK -->
             <v-col>
               <v-card class="pb-3 px-6" outlined>
                 <v-card-title class="text-button"
@@ -49,6 +53,7 @@
           </v-row>
           <v-row>
             <v-col>
+              <!-- CARD: TEMPERATURE -->
               <v-card class="mx-auto mt-2" outlined>
                 <v-list-item two-line>
                   <v-list-item-content>
@@ -112,6 +117,7 @@
               </v-card>
             </v-col>
             <v-col class="d-flex flex-column justify-space-between mt-2">
+              <!-- CARD: TREND MUSIC -->
               <v-card color="#385F73" dark flat>
                 <v-card-title class="text-h5">
                   Unlimited music now
@@ -164,6 +170,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" sm="12" md="4" lg="4">
+          <!-- CARD: TREND MESSAGES -->
           <v-card class="pb-3 px-6" outlined>
             <v-card-title class="text-button">Trend messages</v-card-title>
             <v-list two-line>
@@ -216,6 +223,7 @@
           </v-card>
           <v-row class="mt-1">
             <v-col>
+              <!-- CARD: TWITTER -->
               <v-card class="mx-auto elevation-0" color="#26c6da" dark>
                 <v-card-title>
                   <v-icon large left> mdi-twitter </v-icon>
