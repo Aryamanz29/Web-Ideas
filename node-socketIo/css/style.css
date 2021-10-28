@@ -1,0 +1,67 @@
+body {
+    background: #eee;		
+}    
+
+.message {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background: #5a99ee;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    line-height: 18px;
+    width: 24%;
+    margin: 17px 12px;
+}
+
+.left{
+    float: left;
+    clear: both;
+}
+    
+.right{
+    float: right;
+    clear: both;
+}
+
+.card-header {
+    background: #17202b;
+    font-size: 1rem;
+    position: relative;
+    font-weight: 600;
+    color: #ffffff;
+    max-width: 955px;
+    margin: auto;
+    padding: 1rem 1.5rem;
+    border-radius: 12px 0px;    
+}
+
+.container {
+    max-width: 955px;
+    border: 2px;
+    margin: auto;
+    height: 78vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    background-color: #ffffff;
+}
+    
+#send-container{
+    text-align: center;
+    display: block;
+    margin: auto;
+    max-width: 1085px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+#messageInp{
+    width: 80%;
+    height: 34px;
+    font-size: 22px;
+    font-family: serif;
+}
