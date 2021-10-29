@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<body>
+    
+        <div class="heading"><h1><span class="age">AGE</span> CALCULATOR</h1></div>
+
+        <div class="theme">
+            <input type="checkbox" id="checkbox"
+              class="checkbox">
+            <label for="checkbox" class="label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>  
+          </div>
+
+        <div class="container">
+            
+                <div class="input-bar">
+                    <input placeholder="Enter DOB"  type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+                    <a href="#" id="btn">CALCULATE</a>
+                </div>
+                <div class="output">
+                    <div class="box1 box">
+                        <h2>_</h2>
+                        <h4>Years</h4>
+                    </div>
+                    <div class="box2 box">
+                        <h2>_</h2>
+                        <h4>Months</h4>
+                    </div>
+                    <div class="box3 box">
+                        <h2>_</h2>
+                        <h4>Days</h4>
+                    </div>
+                </div>
+            
+        </div>
+        <script src="app.js"></script>
+</body>
+</html>
