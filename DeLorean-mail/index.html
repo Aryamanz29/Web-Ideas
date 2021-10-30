@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <title>DeLorean Mail</title>
+  </head>
+
+  <body>
+    <!-- <div class="jumbotron vertical-center">
+      
+    </div> -->
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="col-lg-9 col-md-10 col-12 app__main">
+        <form action="/create" method="POST">
+          <h1 class="h3 mb-3 font-weight-normal heading">
+            Send mail in future!
+          </h1>
+          <div class="form-group">
+            <label for="input-email">Email </label>
+            <input
+              name="email"
+              type="email"
+              class="form-control top"
+              id="input-email"
+              placeholder="Enter email"
+              required
+              autofocus
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject </label>
+            <input
+              id="subject"
+              name="subject"
+              type="text"
+              class="form-control middle"
+              placeholder="Subject"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="text-input">Body</label>
+            <textarea
+              id="text-input"
+              rows="4"
+              name="body"
+              type="text"
+              class="form-control middle"
+              placeholder="Body"
+              aria-describedby="mailHelp"
+              required
+            ></textarea>
+            <small id="mailHelp" class="form-text text-muted"
+              >We'll send mail from deLorean mail email on the provided date.
+              so, add your name in subject or body of the mail.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="date-input">Send Date</label>
+            <input
+              id="date-input"
+              type="date"
+              name="deliverDate"
+              id="d-date"
+              class="form-control bottom"
+              required
+            />
+          </div>
+
+          <button class="btn btn-lg btn-primary btn-block" type="submit">
+            Send!
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      let yourDate = new Date();
+      let offset = yourDate.getTimezoneOffset();
+      yourDate = new Date(
+        yourDate.getTime() - offset * 60 * 1000 + 24 * 60 * 60 * 1000
+      );
+      document
+        .getElementById("date-input")
+        .setAttribute("min", yourDate.toISOString().split("T")[0]);
+    </script>
+  </body>
+</html>
