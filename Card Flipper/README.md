@@ -7,3 +7,6 @@
 3) run with npm start
 
 ## How it looks
+
+![](https://github.com/Sparsh-V/Web-Ideas/blob/master/Card%20Flipper/Screenshot%20(5).png)
+![](https://github.com/Sparsh-V/Web-Ideas/blob/master/Card%20Flipper/Screenshot%20(6).png)
