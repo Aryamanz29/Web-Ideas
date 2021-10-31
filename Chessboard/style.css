@@ -1,0 +1,46 @@
+.chessboard{
+    width: 600px;
+    height: 600px;
+    margin: 15px auto;
+    border: 15px solid #333;
+}
+
+.black{
+    float: left;
+    width: 75px;
+    height: 75px;
+    background-color: #999;
+    font-size: 50px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.white{
+    float: left;
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    font-size: 50px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*HAVE A NICE CODING JOURNEY !*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
