@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.icon
+
+{
+    position: absolute;
+    width: 127.13px;
+    height: 127.13px;
+    left: 30px;
+    top: 18px;
+    background: url(logo.svg); 
+}
+
+
+.logo
+{
+    /*position: absolute;
+    width: 127.13px;
+    height: 127.13px;
+    left: 30px;
+    top: 18px;
+    background: url(logo.svg);*/ 
+
+   
+
+    position: absolute;
+    width: 159px;
+    height: 72px;
+    left: 117px;
+    top: 19px;
+    
+    font-family: Reem Kufi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    
+    color: #FFFFFF;
+}
+
+.content
+{
+    /* Decide where to go and when! */
+
+
+    position: absolute;
+    width: 750px;
+    height: 72px;
+    left: 67px;
+    top: 200px;
+
+    font-family: Reem Kufi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+
+}
+.search
+{
+    position: absolute;
+    font-family: Reem Kufi;
+    font-size: 48px;
+    width: 210px;
+    height: 82px;
+    background: rgba(253, 252, 252, 0.2);
+    border: 1px;
+    border-radius: 12px;
+    left: 67px;
+    top: 500px;
+}
+.srch
+{
+    font-family: Reem Kufi;
+    font-size: 48px;
+    width: 210px;
+    height: 82px;
+    background: rgba(196, 196, 196, 0.2);
+    border: 1px;
+    border-radius: 12px;
+    font-family: Reem Kufi;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 72px;
+/* identical to box height */
+
+
+color: #f2fffd;
+
+    
+}
+
+.btn
+{
+    
+    font-family: Reem Kufi;
+    font-size: 48px;
+    width: 210px;
+    height: 82px;
+    background: rgba(196, 196, 196, 0.2);
+    border: 1px;
+    border-radius: 12px;
+    
+    
+}
