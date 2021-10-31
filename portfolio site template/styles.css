@@ -1,0 +1,108 @@
+body{
+  margin:0;
+  text-align: center;
+
+}
+
+hr{
+border: dotted 6px;
+color:grey;
+border-bottom: none;
+width:4%;
+}
+
+h1{
+  margin: 0 auto 0 auto;
+  color:#16a596 ;
+  padding-bottom:30px;
+  margin:0;
+font-family: 'Berkshire Swash', cursive;
+}
+h2{
+  color:#16a596;
+}
+
+h3{
+  color: #16a596;
+}
+p{
+  font-weight: normal;
+}
+
+
+.top{
+  background-color:#dbf6e9;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+.bottom-container{
+  background-color:  #beebe9;
+  padding-bottom: 0;
+  margin-bottom:0;
+}
+
+.color1{
+  width:25%;
+  float:left;
+  margin-right: 25px;
+}
+.color2{
+  width:25%;
+  float:right;
+  margin-left: 25px;
+}
+.color3{
+  width:25%;
+  float:left;
+  margin-right: 25px;
+}
+
+.skill-row{
+  width:50%;
+  margin:100px auto 100px auto;
+  text-align:left;
+  line-height:2;
+}
+
+.middle-container{
+
+}
+.profile{
+  line-height: 2;
+}
+
+.angry{
+  position:relative;
+  left: 500px;
+  top: 180px;
+  color:#206a5d;
+  font-family: 'Petrona', serif;
+
+}
+
+.contact-me{
+  background-color: #beebe9;
+
+}
+.skills{
+  text-align: center;
+  table-layout: auto;
+}
+.center{
+  margin-left: auto;
+ margin-right: auto;
+}
+.corel{
+  position:relative;
+  left:500px;
+  bottom:0px;
+  top:50px;
+}
+.mermaid{
+  position:relative;
+  right:400px;
+}
+.label{
+  color:#206a5d;
+}
