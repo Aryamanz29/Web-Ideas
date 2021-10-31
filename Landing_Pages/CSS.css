@@ -1,0 +1,682 @@
+body{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #01070c;
+}
+
+.wrapper{
+	background: url('Pictures/bac2.jpg')
+	no-repeat center center; 
+	min-height: 35rem;
+
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	background-color: #041017;
+	line-height: 50px;
+}
+.wrapper img
+{
+	margin-left: 6em;
+	float: left;
+}
+nav span h3
+{
+    float: left;
+	margin: 0;
+	color: #27D8CC;
+	margin-left: 2em;
+	font-size: 20px;
+	font-family: 'Cinzel Decorative', cursive;
+	animation-delay: 0.5s;
+	
+	
+}
+
+nav ul{
+	float: right;
+	margin: 0;
+	margin-right: 1.9rem;
+	color: #03e9f4;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	
+}
+nav ul li a
+{
+	position: relative;
+    display: inline-block;
+	padding: 25px 30px;
+	color: #03e9f4;
+	font-size: 15px;
+	overflow: hidden;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5px;
+    -webkit-box-reflect: below 1px linear-gradient(trasparent,#0005)
+}
+
+
+
+nav ul li a:hover
+{
+	background: #03e9f4;
+	color: #00090F;
+	font-weight: bold;
+	box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+} 
+
+
+
+nav ul li a span
+{
+	position: absolute;
+	display: block;
+}
+
+nav ul li a span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#03e9f4);
+	animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1
+{
+	0%
+	{
+		left: -100%;
+	}
+	50%,100%
+	{
+		left: 100%;
+	}
+}
+
+nav ul li a span 
+{
+	position: absolute;
+	display: block;
+
+}
+
+nav ul li a span:nth-child(2)
+{
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#03e9f4);
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+
+}
+@keyframes animate2
+{
+	0%
+	{
+		top: -100%;
+	}
+	50%,100%
+	{
+		top: 100%;
+	}
+} 
+
+nav ul li a span:nth-child(3)
+{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#03e9f4);
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.5s;
+
+}
+@keyframes animate3
+{
+	0%
+	{
+		right: -100%;
+	}
+	50%,100%
+	{
+		right: 100%;
+	}
+} 
+
+nav ul li a span:nth-child(4)
+{
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#03e9f4);
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s;
+
+}
+@keyframes animate4
+{
+	0%
+	{
+		bottom: -100%;
+	}
+	50%,100%
+	{
+		bottom: 100%;
+	}
+} 
+
+.section
+{
+	padding: 25px;
+	text-align: justify;
+	font-family: 'Henny Penny', cursive;
+	color: #D0D3D4;
+	margin-left: 25%;
+	font-size: 20px;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+}
+
+.info
+{
+   color: #27D8CC;
+  font-family: 'Marck Script', cursive;
+   margin-left: 15%;
+   font-size: 20px;
+   
+}
+
+.clubs img
+{
+	overflow: hidden;
+	width: 40%;
+	height: 40%;
+    float: right;
+    display: inline-block;
+}
+
+.sort3 span h1
+{
+	margin-top: 5%;
+	align-items: center;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+
+}
+
+.clubs span h2
+{
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Caveat', cursive;
+}
+
+.clubs span p
+{
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Caveat', cursive;
+}
+
+.clubs a
+{
+	display: inline-block;
+	padding: 10px 20px;
+	color: #0F1111;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	margin-top: 20px;
+	letter-spacing: 4px;
+	background-color: #03e9f4;
+	border: 1px solid #03e9f4;
+	font-family: 'Kaushan Script', cursive;
+	animation-delay: 1.2s;
+	animation-iteration-count: infinite;
+	border-radius: 30px;
+
+}
+
+.clubs a:hover
+{
+	background-color: #03e9f4;
+	color: #fff;
+	box-shadow: 0 0 3px #03e9f4,
+	            0 0 9px #03e9f4,
+	            0 0 27px #03e9f4,
+	            0 0 81px #03e9f4;
+}
+
+
+.hat img
+{
+	overflow: hidden;
+	width: 60%;
+	height: 60%;
+    float: left;
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.sort span h1
+{
+	margin-top: 15%;
+	align-items: center;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+
+}
+
+.hat span h2
+{
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Caveat', cursive;
+}
+
+.hat span p
+{
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Caveat', cursive;
+}
+
+.hat a
+{
+	display: inline-block;
+	padding: 10px 20px;
+	color: #0F1111;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	margin-top: 20px;
+	letter-spacing: 4px;
+	background-color: #03e9f4;
+	border: 1px solid #03e9f4;
+	font-family: 'Kaushan Script', cursive;
+	animation-delay: 1.2s;
+	animation-iteration-count: infinite;
+	border-radius: 30px;
+
+}
+
+.hat a:hover
+{
+	background-color: #03e9f4;
+	color: #fff;
+	box-shadow: 0 0 3px #03e9f4,
+	            0 0 9px #03e9f4,
+	            0 0 27px #03e9f4,
+	            0 0 81px #03e9f4;
+}
+
+
+
+.wand img
+{
+	overflow: hidden;
+	width: 40%;
+	height: 40%;
+    float: right;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+.sort1 span h1
+{
+	margin-top: 5%;
+	align-items: center;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+
+}
+
+.wand span h2
+{
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Caveat', cursive;
+}
+
+.wand span p
+{
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Caveat', cursive;
+}
+
+.wand a
+{
+	display: inline-block;
+	padding: 10px 20px;
+	color: #0F1111;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	margin-top: 20px;
+	letter-spacing: 4px;
+	background-color: #03e9f4;
+	border: 1px solid #03e9f4;
+	font-family: 'Kaushan Script', cursive;
+	animation-delay: 1.2s;
+	animation-iteration-count: infinite;
+	border-radius: 30px;
+
+}
+
+.wand a:hover
+{
+	background-color: #03e9f4;
+	color: #fff;
+	box-shadow: 0 0 3px #03e9f4,
+	            0 0 9px #03e9f4,
+	            0 0 27px #03e9f4,
+	            0 0 81px #03e9f4;
+}
+
+
+.patronus img
+{
+	overflow: hidden;
+	width: 40%;
+	height: 40%;
+    float: left;
+    display: inline-block;
+    margin-top: 20%;
+}
+
+.sort2 span h1
+{
+	margin-top: 25%;
+	margin-left: 20px;
+    align-items: center;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+
+}
+
+.patronus span h2
+{
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Caveat', cursive;
+}
+
+.patronus span p
+{
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Caveat', cursive;
+}
+
+.patronus a
+{
+	display: inline-block;
+	padding: 10px 20px;
+	color: #0F1111;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	margin-top: 20px;
+	letter-spacing: 4px;
+	background-color: #03e9f4;
+	border: 1px solid #03e9f4;
+	font-family: 'Kaushan Script', cursive;
+	animation-delay: 1.2s;
+	animation-iteration-count: infinite;
+	border-radius: 30px;
+
+}
+
+.patronus a:hover
+{
+	background-color: #03e9f4;
+	color: #fff;
+	box-shadow: 0 0 3px #03e9f4,
+	            0 0 9px #03e9f4,
+	            0 0 27px #03e9f4,
+	            0 0 81px #03e9f4;
+}
+
+
+.tcup img
+{
+	overflow: hidden;
+	width: 40%;
+	height: 40%;
+    float: right;
+    display: inline-block;
+    margin-top: 20%;
+}
+
+.sort4 span h1
+{
+	margin-top: 25%;
+	align-items: center;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+
+}
+
+.tcup span h2
+{
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Caveat', cursive;
+}
+
+.tcup span p
+{
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Caveat', cursive;
+}
+
+.tcup a
+{
+	display: inline-block;
+	padding: 10px 20px;
+	color: #0F1111;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	margin-top: 20px;
+	letter-spacing: 4px;
+	background-color: #03e9f4;
+	border: 1px solid #03e9f4;
+	font-family: 'Kaushan Script', cursive;
+	animation-delay: 1.2s;
+	animation-iteration-count: infinite;
+	border-radius: 30px;
+
+}
+
+.tcup a:hover
+{
+	background-color: #03e9f4;
+	color: #fff;
+	box-shadow: 0 0 3px #03e9f4,
+	            0 0 9px #03e9f4,
+	            0 0 27px #03e9f4,
+	            0 0 81px #03e9f4;
+}
+
+
+.qgame img
+{
+	overflow: hidden;
+	width: 50%;
+	height: 50%;
+    float: left;
+    display: inline-block;
+    margin-top: 20%;
+}
+
+.sort5 span h1
+{
+	margin-top: 25%;
+	margin-left: 20px;
+    align-items: center;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+
+}
+
+.qgame span h2
+{
+	color: #fff;
+	font-size: 40px;
+	font-family: 'Caveat', cursive;
+}
+
+.qgame span p
+{
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Caveat', cursive;
+}
+
+.qgame a
+{
+	display: inline-block;
+	padding: 10px 20px;
+	color: #0F1111;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	margin-top: 20px;
+	letter-spacing: 4px;
+	background-color: #03e9f4;
+	border: 1px solid #03e9f4;
+	font-family: 'Kaushan Script', cursive;
+	animation-delay: 1.2s;
+	animation-iteration-count: infinite;
+	border-radius: 30px;
+
+}
+
+.qgame a:hover
+{
+	background-color: #03e9f4;
+	color: #fff;
+	box-shadow: 0 0 3px #03e9f4,
+	            0 0 9px #03e9f4,
+	            0 0 27px #03e9f4,
+	            0 0 81px #03e9f4;
+}
+
+
+.albus img
+{
+	overflow: hidden;
+	width: 50%;
+	height: 50%;
+    margin-top: 20%;
+}
+
+
+
+
+
+.wrap
+{
+	background: url(Pictures/aboutback.jpg);
+	padding: 1rem 0;
+	border-top: 3px solid #fff;
+	border-bottom: 5px solid #fff;
+
+}
+
+.container
+{
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.logo
+{
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.logo span
+{
+	display: inline-block;
+	
+	padding: 8px 35px;
+	font-size: 26px;
+	text-transform: uppercase;
+	color: #A2DBEC;
+
+	font-family: 'Kaushan Script', cursive;
+}
+
+.content
+{
+	max-width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	color: #C2CED2;
+	font-size: 20px;
+	font-family: 'Caveat', cursive;
+}
+
+.social_icons
+{
+	text-align: center;
+	padding: 2em 0;
+}
+
+.social_icons a
+{
+	color: #fff;
+	margin: 0 10px;
+	font-size: 18px;
+}
+
+.contact_info
+{
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.contact_info a
+{
+	text-decoration: none;
+	color: #50F0DD;
+	font-size: 14px;
+	font-style: italic;
+	margin: 0px 20px;
+}
+.Copyright p
+{
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+  
+}
