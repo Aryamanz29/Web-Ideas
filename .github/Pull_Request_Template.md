@@ -25,5 +25,10 @@ Fixes #issue_number_here
 - [ ] I have added tests that prove my fix is effective or that my feature works.
 - [ ] New and existing unit tests pass locally with my changes.
 - [ ] Any dependent changes have been merged and published in downstream modules.
+- [ ] Project must follow good coding practices.
+- [ ] Project must be related to web development only.
+- [ ] Project must be added to their respective category directory eg. `React/, Django/, Php/` etc.
+- [ ] It must have proper documentation (it would be better if it had demos or screenshots).
+- [ ] Avoid raising Spam PR's.
 
 # Screenshots / Video:
