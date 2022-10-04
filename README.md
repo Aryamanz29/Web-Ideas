@@ -287,7 +287,8 @@ Always create new branch
     git status
     
 #### 9.  Commit all the changes
-Write commit message as "Small Message"
+Write commit message as "Small Message", 
+    Click <a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">Here</a> to know about some commit's messages.
     
     git commit -m "Write a meaningfull but small commit message"
     
@@ -297,6 +298,12 @@ Write commit message as "Small Message"
     
 #### 11. Create a PR on Github.
     Just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing
+    
+    
+## Project Motivation
+- You can get inspiration from "Web-Ideas" about how to design effective web components for your upcoming project 💯.
+- Every Developer always been motivated by creative projects, teamwork and being able to draw a connection between his efforts and the organization’s bottom line.    Having the opportunity to contribute to this idea should be one of the reasons you should do this.
+
                                              
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
