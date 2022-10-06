@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sushant Gangwar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>The Enigma</title>
+</head>
+<body>
+    <div class="wrapper">
+        <button id="brief_overlay_button" class="brief_overlay_button"><i class="fa fa-question fa-2x"></i></button>
+        <div id="brief_overlay" class="brief_overlay">
+            <div class="brief_overlay_content">
+                <span>BRIEF</span>
+                <p id="brief_overlay"><strong>Morse Code</strong> is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes or dits and dahs. Morse code is named after Samuel Morse, an inventor of the telegraph.</p>
+            </div>
+        </div>
+        <h1>THE ENIGMA</h1>
+        <div id="sub_wrapper">
+            <div class="input_wrapper">
+                <h2>Plain text :</h2>
+                <h3>Choose Encryption :</h3>
+                
+                <select id="encryption_type" onchange="choice()">
+                    <option value="0">Morse Code</option>
+                    <option value="1">Caesar Cipher</option>
+                    <!-- <option value="2">Row Cipher</option> -->
+                </select>
+                <h2>Code Text :</h2>
+            </div>
+            <div class="result_wrapper">
+                <textarea name="plaintext" id="plaintext" cols="40" rows="4" placeholder="ENTER TEXT HERE"></textarea>
+                <button class="submit_button" type="button" onclick="submit()">Submit</button>
+                <p id="result" class="result_box"></p>
+            </div>
+            <div class="brief_tab">
+                    <span>BRIEF</span>
+                    <p id="brief_tab"><strong>Morse Code</strong> is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes or dits and dahs. Morse code is named after Samuel Morse, an inventor of the telegraph.</p>
+            </div>
+        </div>
+    </div>
+    <footer>&copy; Copyright to <img src="/LOGO.svg"> SGWR CREATIONS</footer>
+    <script src="/algo.js"></script>
+</body>
+</html>
