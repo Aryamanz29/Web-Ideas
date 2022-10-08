@@ -1,0 +1,61 @@
+body{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/Images/Template-actual-image.jpg);
+}
+.color{
+    color: white;
+    margin-left: 2%;
+    margin-top: 18%;
+}
+.paracolor{
+    color: grey;
+}
+.form{
+    color: white;
+    margin-left: 1.7%;
+}
+.button{
+    text-align: center;
+    font-size: 15px;
+    margin-left: 1.1%;
+    background-color: lightseagreen;
+    color: white;
+    cursor: pointer;
+}
+.button1{
+    padding: 0.5%;
+    border-radius: 8px;
+}
+.fa{
+    font-size: 16px;
+    width: 30px;
+    text-align: center;
+    color: whitesmoke;
+}
+.fa-github{
+    background-color: black;
+}
+.fa-instagram{
+    background-color: black;
+}
+.fa-twitter{
+    background-color: black;
+}
+.fa-envelope{
+    background-color: black;
+}
+.socials{
+   margin-left: 2%;
+   margin-top: 10%;
+}
+.copyright{
+margin-left: 2.5%;
+color: grey;
+font-size: x-small;
+}
+.email{
+padding: 0.5%;
+border-radius: 8px;
+background-color: transparent;
+}
