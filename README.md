@@ -1,4 +1,5 @@
 
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <img align="center" src="https://user-images.githubusercontent.com/56113566/195996719-a3d15bd4-6926-4d38-a18e-aa3b6e92f751.jpg" height="400px" width="800px">
@@ -205,7 +206,7 @@
 
 * [LinkTree Landing Page](./static-sites/LinkTree-Landing-Page/)
 
-* [Neumorphic Cloud](./static-sites/Neumorphic_Clock/)
+* [Neumorphic Clock](./static-sites/Neumorphic_Clock/)
 
 * [Online Shopping Portal](./static-sites/online_shopping_portal/)
 
